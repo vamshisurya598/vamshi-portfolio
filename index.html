@@ -21,11 +21,11 @@
 
     <p><b>Email:</b> vamshisurya598@gmail.com</p>
     <p><b>Phone:</b> +1 (917) 266-1311</p>
-    <p><b>LinkedIn:</b> 
-      <a href="https://www.linkedin.com/in/vamshi-surya598" target="_blank">
-        linkedin.com/in/vamshi-surya598
-      </a>
-    </p>
+   <p><b>LinkedIn:</b> 
+  <a href="https://www.linkedin.com/in/vamshi-surya598/" target="_blank">
+    View Profile
+  </a>
+</p>
 
     <p class="summary">
       Senior Generative AI & ML Engineer with 10+ years of experience delivering enterprise-scale AI systems across finance, healthcare, retail, and insurance. 
@@ -135,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const buttons = document.querySelectorAll(".tabs button");
   const tabs = document.querySelectorAll(".tab");
+  const hero = document.querySelector(".hero");
 
   buttons.forEach(button => {
     button.addEventListener("click", () => {
@@ -142,11 +143,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
       tabs.forEach(tab => tab.classList.remove("active"));
       document.getElementById(target).classList.add("active");
+
+      // IMAGE SHOW ONLY IN ABOUT
+      if (target === "about") {
+        hero.classList.remove("hide-hero");
+      } else {
+        hero.classList.add("hide-hero");
+      }
     });
   });
 
+  // PROJECT EXPAND
   const cards = document.querySelectorAll(".card");
-
   cards.forEach(card => {
     card.addEventListener("click", () => {
       card.classList.toggle("open");
