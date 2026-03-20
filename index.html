@@ -3,136 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vamshi Surya | Senior GenAI Engineer</title>
+<title>Vamshi Surya | GenAI Engineer</title>
 <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-left">
+  <div class="left">
     <img src="profile.jpg" class="profile-img">
   </div>
-  <div class="hero-right">
-    <h1>Hi, I'm Vamshi Surya</h1>
-    <h2>Senior Generative AI & ML Engineer</h2>
-    <p>Building enterprise-scale AI systems, LLM applications & Agentic AI platforms</p>
-    <p>Email: <a href="mailto:vamshisurya598@gmail.com">vamshisurya598@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/vamshi-surya598" target="_blank">vamshi-surya598</a></p>
-    <p>Phone: +1(917)266-1311</p>
+
+  <div class="right">
+    <h1>Vamshi Surya</h1>
+    <h2>Senior Generative AI Engineer</h2>
+    <p>Building enterprise AI, LLM systems & Agentic AI platforms</p>
+    <p>Email: vamshisurya598@gmail.com</p>
+    <p>Phone: +1 (917) 266-1311</p>
   </div>
 </section>
 
-<!-- NAVBAR -->
-<header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+<!-- NAV TABS -->
+<div class="tabs">
+  <button onclick="openTab('about')">About</button>
+  <button onclick="openTab('experience')">Experience</button>
+  <button onclick="openTab('projects')">Projects</button>
+  <button onclick="openTab('skills')">Skills</button>
+</div>
 
-<!-- ABOUT -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    Senior Generative AI & ML Engineer with 10+ years of experience building enterprise AI platforms, LLM applications, and scalable ML systems. Specialized in RAG architectures, AI-driven analytics, fraud detection, and customer insights platforms.
-  </p>
-</section>
+<!-- CONTENT -->
+<div class="content">
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <h2>Professional Experience</h2>
-
-  <div class="job">
-    <h3>PNC Financial Services – Gen AI Engineer</h3>
-    <p><em>May 2024 – Present | New York, NY</em></p>
-    <ul>
-      <li>Architected enterprise Generative AI platforms using AWS (Bedrock, SageMaker, EKS, EC2, S3, RDS, Lambda, IAM, VPC, CloudWatch)</li>
-      <li>Built LLM-powered AI Agents and multi-step workflows using LangChain and LangGraph</li>
-      <li>Implemented high-throughput Python/FastAPI microservices, embedding pipelines with BERT + Pinecone/FAISS</li>
-      <li>Delivered real-time fraud detection & customer insights with 40% higher inference throughput</li>
-      <li>Managed CI/CD pipelines, Docker + Kubernetes deployments, observability with Prometheus & Grafana</li>
-    </ul>
+  <!-- ABOUT -->
+  <div id="about" class="tab active">
+    <h2>About Me</h2>
+    <p>
+      Senior Generative AI & ML Engineer with 10+ years of experience building enterprise AI platforms,
+      LLM applications, and scalable ML systems across finance, healthcare, and retail.
+    </p>
   </div>
 
-  <div class="job">
-    <h3>Humana – Senior AI/ML Engineer</h3>
-    <p><em>Sept 2022 – April 2024 | Louisville, KY</em></p>
-    <ul>
-      <li>Architected enterprise AI/ML platforms using Azure (Machine Learning, AKS, Virtual Machines, Blob Storage, SQL Database, Functions, Key Vault)</li>
-      <li>Built multi-agent GenAI workflows for predictive healthcare insights</li>
-      <li>Semantic search & embeddings using BERT + Pinecone/FAISS</li>
-      <li>Interactive ReactJS dashboards for predictive health alerts & operational insights</li>
-      <li>Managed CI/CD, containerization, and ML lifecycle monitoring</li>
-    </ul>
+  <!-- EXPERIENCE -->
+  <div id="experience" class="tab">
+    <h2>Experience</h2>
+
+    <div class="card">
+      <h3>PNC Financial Services</h3>
+      <p>GenAI Engineer | 2024 - Present</p>
+      <p>Built LLM agents, RAG pipelines, AWS Bedrock solutions for fraud detection.</p>
+    </div>
+
+    <div class="card">
+      <h3>Humana</h3>
+      <p>Senior AI/ML Engineer | 2022 - 2024</p>
+      <p>Developed healthcare AI systems with Azure ML, embeddings, and semantic search.</p>
+    </div>
+
   </div>
 
-  <div class="job">
-    <h3>Target Corporation – AI/ML Engineer</h3>
-    <p><em>April 2019 – August 2022 | Minneapolis, MN</em></p>
-    <ul>
-      <li>GCP-based AI/ML platforms (Vertex AI, GKE, Cloud SQL, Cloud Functions)</li>
-      <li>GenAI-driven recommendation PoCs, hybrid RAG pipelines</li>
-      <li>Python/FastAPI backend, Angular dashboards, TensorFlow & PyTorch pipelines</li>
-    </ul>
+  <!-- PROJECTS -->
+  <div id="projects" class="tab">
+    <h2>Projects</h2>
+
+    <div class="card" onclick="toggleDetails(this)">
+      <h3>GenAI Fraud Detection</h3>
+      <p class="short">Click to expand</p>
+      <div class="details">
+        <p>LLM-powered fraud detection using RAG, vector DB, and AWS.</p>
+        <ul>
+          <li>LangChain + FAISS</li>
+          <li>Real-time detection</li>
+          <li>40% performance boost</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+      <h3>Enterprise RAG System</h3>
+      <p class="short">Click to expand</p>
+      <div class="details">
+        <p>Document intelligence system with semantic search.</p>
+        <ul>
+          <li>Embedding pipelines</li>
+          <li>Hybrid retrieval</li>
+          <li>LLM responses</li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 
-  <div class="job">
-    <h3>Travelers Companies – Senior Data Science Engineer</h3>
-    <p><em>Sept 2017 – March 2019 | Hartford, CT</em></p>
-    <ul>
-      <li>Architected AWS AI/ML platforms for insurance claim prediction & risk analytics</li>
-      <li>Implemented semantic search, embeddings, dashboards</li>
-    </ul>
+  <!-- SKILLS -->
+  <div id="skills" class="tab">
+    <h2>Skills</h2>
+    <p><b>GenAI:</b> GPT-4, LangChain, RAG, Agents</p>
+    <p><b>ML:</b> TensorFlow, PyTorch, XGBoost</p>
+    <p><b>Cloud:</b> AWS, GCP, Azure</p>
+    <p><b>Tools:</b> Docker, Kubernetes, Terraform</p>
   </div>
 
-  <div class="job">
-    <h3>Krios Info Solutions – Data Engineer</h3>
-    <p><em>June 2015 – April 2017 | Pune, India</em></p>
-    <ul>
-      <li>Azure-based AI/ML pipelines for healthcare claims processing</li>
-      <li>Semantic search, embeddings, dashboards, microservices</li>
-    </ul>
-  </div>
-</section>
+</div>
 
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Technical Skills</h2>
-  <ul>
-    <li><strong>Generative AI & LLMOps:</strong> GPT-4, Claude, LLaMA, LangChain, LangGraph, RAG, AI Agents, Embeddings, Vector DBs (Pinecone, FAISS, Weaviate)</li>
-    <li><strong>Machine Learning:</strong> TensorFlow, PyTorch, Keras, Scikit-learn, XGBoost, MLflow, Feature Engineering, Drift Detection</li>
-    <li><strong>Data Engineering:</strong> Apache Spark, PySpark, Kafka, Hadoop, Hive, Snowflake, Redshift, ETL/ELT pipelines</li>
-    <li><strong>Backend:</strong> Python, FastAPI, Flask, Java, Spring Boot, Node.js, REST/GraphQL, Microservices</li>
-    <li><strong>Frontend:</strong> ReactJS, Angular, TypeScript, HTML5, CSS3</li>
-    <li><strong>Cloud:</strong> AWS, Azure, GCP, Multi-account governance</li>
-    <li><strong>DevOps & CI/CD:</strong> Docker, Kubernetes, Terraform, CloudFormation, Jenkins, GitHub Actions, GitLab CI</li>
-    <li><strong>Databases:</strong> PostgreSQL, MySQL, Oracle, SQL Server, MongoDB, DynamoDB, Redis</li>
-    <li><strong>Monitoring & Security:</strong> Prometheus, Grafana, CloudWatch, IAM, RBAC, OAuth2, JWT, SSO, PII compliance</li>
-    <li><strong>BI & Reporting:</strong> Power BI, Tableau</li>
-  </ul>
-</section>
+<script>
+function openTab(tabName) {
+  let tabs = document.getElementsByClassName("tab");
+  for (let tab of tabs) {
+    tab.classList.remove("active");
+  }
+  document.getElementById(tabName).classList.add("active");
+}
 
-<!-- EDUCATION -->
-<section id="education">
-  <h2>Education</h2>
-  <p>Bachelor of Technology in Computer Science, Kakatiya College, Telangana, India (2011 – 2015)</p>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:vamshisurya598@gmail.com">vamshisurya598@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/vamshi-surya598" target="_blank">vamshi-surya598</a></p>
-  <p>Phone: +1(917)266-1311</p>
-</section>
-
-<footer>
-  <p>© 2026 Vamshi Surya | Built with ❤️ using AI</p>
-</footer>
+function toggleDetails(card) {
+  card.classList.toggle("open");
+}
+</script>
 
 </body>
 </html>
