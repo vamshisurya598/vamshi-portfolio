@@ -96,3 +96,33 @@ body {
 a {
   color: black;
 }
+/* HERO HIDE */
+.hide-hero {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: 0.4s ease;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* CONTENT POP */
+.tab {
+  display: none;
+  animation: popup 0.4s ease;
+}
+
+.tab.active {
+  display: block;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
