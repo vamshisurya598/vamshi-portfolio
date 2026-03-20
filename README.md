@@ -1,26 +1,48 @@
-# Vamshi Surya – Professional AI Portfolio
+# 🚀 Vamshi Surya – Senior GenAI & ML Engineer
 
-This is a single-page professional portfolio for Vamshi Surya, showcasing senior-level Generative AI & ML projects.
+<p align="center">
+  <img src="profile.jpg" width="180" style="border-radius:50%; border:3px solid #0ea5e9;" />
+</p>
 
-## Sections
-- About Me
-- Featured AI/ML Projects
-- Tech Stack
-- Contact (Email & LinkedIn)
+Welcome to my AI portfolio showcasing real-world **Generative AI, LLM, and enterprise solutions**.
 
-## Deployment Options
-### GitHub Pages
-1. Create a repository
-2. Upload `index.html` and `styles.css`
-3. Enable GitHub Pages from main branch
-4. Visit `https://yourusername.github.io/repo-name`
+🌐 **Live Portfolio**: https://yourusername.github.io/vamshi-portfolio  
 
-### Netlify
-1. Go to netlify.com
-2. Drag & drop the folder
-3. Website will be live instantly
+---
 
-## Next Steps
-- Add project screenshots or diagrams
-- Add demo videos for projects
-- Optionally expand with blog or case studies
+## 🧠 About Me
+- Senior AI Engineer with 10+ years experience
+- Specialized in **GenAI, LLMs, and RAG systems**
+- Expertise in **AWS | GCP | Azure**
+- Building **Agentic AI & Copilot solutions**
+
+---
+
+## 🚀 Featured Projects
+
+### 🧠 GenAI Copilot
+Built enterprise AI assistant using RAG + LLMs  
+👉 Improved workflow automation
+
+### 📄 Document Intelligence System
+LLM-powered extraction from documents  
+👉 Reduced manual effort by 70%
+
+### 🤖 Multi-Agent AI
+Autonomous AI workflows using LangChain  
+👉 Advanced reasoning & task execution
+
+---
+
+## ⚡ Tech Stack
+Python | LLMs | LangChain | RAG | AWS | GCP | Azure | Docker | Kubernetes
+
+---
+
+## 📬 Contact
+- 📧 vamshisurya598@gmail.com  
+- 💼 LinkedIn: (add your link)
+
+---
+
+⭐ *Building real-world AI systems at scale*
