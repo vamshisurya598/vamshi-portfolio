@@ -6,7 +6,7 @@
 
 Welcome to my AI portfolio showcasing real-world **Generative AI, LLM, and enterprise solutions**.
 
-🌐 **Live Portfolio**: https://yourusername.github.io/vamshi-portfolio  
+🌐 **Live Portfolio**: https://vamshisurya598.github.io/vamshi-portfolio
 
 ---
 
