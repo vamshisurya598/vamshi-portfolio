@@ -1,17 +1,17 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background: #f5f5f5;
   color: #111;
 }
 
 /* HERO */
 .hero {
   display: flex;
-  padding: 40px;
+  padding: 50px;
   background: white;
+  gap: 50px;
   align-items: center;
-  gap: 40px;
 }
 
 .left {
@@ -23,7 +23,7 @@ body {
 }
 
 .profile-img {
-  width: 280px;
+  width: 320px;
   border-radius: 10px;
 }
 
@@ -36,9 +36,9 @@ body {
 
 .tabs button {
   padding: 15px;
+  color: white;
   border: none;
   background: none;
-  color: white;
   cursor: pointer;
 }
 
@@ -46,18 +46,33 @@ body {
   background: #333;
 }
 
-/* CONTENT */
-.content {
-  padding: 20px;
+/* SLIDE WRAPPER */
+.tab-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
 }
 
 /* TABS */
 .tab {
   display: none;
+  animation: slide 0.4s ease;
 }
 
 .tab.active {
   display: block;
+}
+
+/* SLIDE EFFECT */
+@keyframes slide {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 /* CARDS */
@@ -75,4 +90,9 @@ body {
 
 .card.open .details {
   display: block;
+}
+
+/* LINKS */
+a {
+  color: black;
 }
