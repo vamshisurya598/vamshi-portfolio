@@ -3,6 +3,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: #0f172a;
   color: white;
+  line-height: 1.6;
 }
 
 /* HERO */
@@ -10,6 +11,7 @@ body {
   text-align: center;
   padding: 60px 20px;
   background: linear-gradient(135deg, #0f172a, #1e293b);
+  animation: float 3s ease-in-out infinite;
 }
 
 .profile-img {
@@ -17,6 +19,7 @@ body {
   border-radius: 50%;
   border: 3px solid #38bdf8;
   margin-bottom: 20px;
+  animation: float 4s ease-in-out infinite;
 }
 
 /* NAVBAR */
@@ -33,22 +36,30 @@ nav a {
   font-weight: bold;
 }
 
+nav a:hover {
+  color: #06b6d4;
+}
+
 /* SECTIONS */
 section {
   padding: 40px;
+  margin: 20px;
+  border-radius: 10px;
+  background: #1e293b;
+  animation: float 4s ease-in-out infinite alternate;
 }
 
-/* PROJECT CARDS */
-.project {
-  background: #1e293b;
+/* JOB / PROJECT CARDS */
+.job, .project {
+  background: #111827;
   padding: 20px;
-  margin: 20px 0;
+  margin: 15px 0;
   border-radius: 12px;
   transition: transform 0.3s ease;
 }
 
-.project:hover {
-  transform: scale(1.03);
+.job:hover, .project:hover {
+  transform: translateY(-5px) scale(1.02);
 }
 
 /* FOOTER */
@@ -56,4 +67,11 @@ footer {
   text-align: center;
   padding: 20px;
   background: #020617;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
