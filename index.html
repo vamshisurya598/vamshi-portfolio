@@ -1,338 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vamshi Surya | GenAI Engineer</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vamshi Surya | Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+      color: #333;
+    }
+    h2 { color: #2c3e50; margin-top: 40px; }
+    h3 { color: #34495e; margin-top: 25px; }
+    p { line-height: 1.6; margin: 10px 0; }
+    ul { margin: 10px 0 20px 20px; }
+    li { margin-bottom: 5px; }
+    .tabs {
+      display: flex;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    .tab {
+      padding: 10px 20px;
+      background: #ecf0f1;
+      margin-right: 5px;
+      border-radius: 5px 5px 0 0;
+      font-weight: bold;
+    }
+    .tab.active { background: #3498db; color: #fff; }
+    .tab-content { display: none; padding: 20px; background: #fff; border-radius: 0 5px 5px 5px; margin-bottom: 30px; }
+    .tab-content.active { display: block; }
+  </style>
 </head>
-
 <body>
 
-<!-- HERO -->
-<section class="hero" id="heroSection">
-  <div class="left">
-    <img src="profile.jpg" class="profile-img">
+  <!-- About Me -->
+  <section id="about">
+    <h2>👋 About Me</h2>
+    <p>Hello! I’m <strong>Vamshi Surya</strong>, a Senior Generative AI & ML Engineer with 10+ years of experience designing, building, and deploying AI solutions across finance, healthcare, retail, and insurance industries. I specialize in:</p>
+    <ul>
+      <li>Generative AI & LLM applications (OpenAI, Azure OpenAI, LangChain)</li>
+      <li>Designing RAG pipelines and vector search systems</li>
+      <li>Building scalable backend systems using Python & FastAPI</li>
+      <li>Cloud platforms including AWS, Azure, and Google Cloud (GCP)</li>
+      <li>MLOps, CI/CD pipelines, and production-grade deployments</li>
+    </ul>
+  </section>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <div class="tab active" data-tab="experience">Experience</div>
+    <div class="tab" data-tab="projects">Projects</div>
   </div>
 
-  <div class="right">
-    <h1>Vamshi Surya</h1>
-    <h2>Senior Generative AI & ML Engineer</h2>
+  <!-- Experience Tab -->
+  <div id="experience" class="tab-content active">
+    <h2>💼 Experience</h2>
 
-    <p><b>Email:</b> vamshisurya598@gmail.com</p>
-    <p><b>Phone:</b> +1 (917) 266-1311</p>
-    <p><b>LinkedIn:</b> 
-      <a href="https://www.linkedin.com/in/vamshi-surya598/" target="_blank">
-        View Profile
-      </a>
+    <!-- PNC -->
+    <h3>🏦 PNC Financial Services</h3>
+    <p><strong>GenAI Engineer | May 2024 – Present</strong></p>
+    <p>
+      At PNC, I build enterprise-grade Generative AI solutions that enable intelligent automation and enhance how financial data is consumed across the organization. My work focuses on designing LLM-powered applications, AI agents, and RAG-based systems that allow natural language querying over large financial datasets with high accuracy and compliance.
     </p>
+    <p>
+      I architect enterprise AI platforms on AWS (SageMaker, EKS, EC2, Lambda, S3, RDS), designing highly scalable, secure, and fault-tolerant systems. I implement AI copilots and multi-step reasoning workflows to automate complex financial processes, including fraud detection and decision support.
+    </p>
+    <p>
+      I develop high-performance Python/FastAPI microservices with async APIs, caching, and optimized data pipelines, improving inference throughput by 40% and reducing latency by 32%. I also manage end-to-end data pipelines using Apache Spark, Kafka, and Airflow for batch and real-time processing.
+    </p>
+    <p>
+      I build semantic search and vector retrieval pipelines using BERT, Pinecone, and FAISS, integrated with structured and unstructured enterprise data in Snowflake and PostgreSQL. I optimize LLM outputs using prompt engineering, RAG evaluation, and observability frameworks (Prometheus, Grafana, CloudWatch).
+    </p>
+    <p>
+      I design secure APIs with OAuth2/JWT, maintain CI/CD pipelines, and deploy containerized services on Kubernetes, ensuring enterprise-grade compliance and high availability. I collaborate across Agile teams to deliver reliable production-grade AI systems.
+    </p>
+    <ul>
+      <li>Built enterprise LLM systems, RAG pipelines, fraud detection platforms, and AI agents using AWS.</li>
+      <li>Designed multi-step reasoning workflows and AI copilots for internal productivity.</li>
+      <li>Developed high-throughput Python/FastAPI microservices, reducing latency by 32%.</li>
+      <li>Built embedding and semantic search pipelines with BERT, Pinecone, and FAISS.</li>
+      <li>Managed Spark/Kafka/Airflow pipelines for batch and real-time AI processing.</li>
+      <li>Implemented prompt engineering strategies to improve AI faithfulness and relevancy.</li>
+      <li>Deployed scalable microservices on Kubernetes and automated infrastructure with Terraform.</li>
+      <li>Built interactive dashboards using Angular, improving alert visibility by 50%.</li>
+      <li>Implemented CI/CD pipelines, secure authentication, and observability frameworks.</li>
+      <li>Delivered full lifecycle AI solutions from ingestion to deployment and monitoring.</li>
+    </ul>
 
-    <p class="summary">
-      Senior Generative AI & ML Engineer with 10+ years of experience building enterprise AI systems, 
-      LLM platforms, and scalable ML pipelines across finance, healthcare, retail, and insurance.
+    <!-- Humana -->
+    <h3>🏥 Humana</h3>
+    <p><strong>Senior AI/ML Engineer | Sept 2022 – April 2024</strong></p>
+    <p>
+      At Humana, I built AI-driven healthcare platforms for predictive patient care, clinical data analytics, and operational efficiency. My work involved semantic search, GenAI prototypes, and multi-agent reasoning workflows for patient outcome prediction.
     </p>
+    <ul>
+      <li>Built predictive patient care systems using Azure ML and AKS.</li>
+      <li>Developed semantic search pipelines for structured and unstructured clinical data.</li>
+      <li>Built multi-agent GenAI workflows for predictive analytics and recommendations.</li>
+      <li>Engineered real-time data pipelines using Spark, Kafka, and Airflow.</li>
+      <li>Implemented backend APIs with Python/FastAPI for high-throughput AI services.</li>
+      <li>Developed interactive dashboards using ReactJS for healthcare insights.</li>
+      <li>Ensured HIPAA-compliant secure access and data governance.</li>
+      <li>Optimized model outputs with evaluation and prompt strategies.</li>
+    </ul>
+
+    <!-- Target -->
+    <h3>🛒 Target Corporation</h3>
+    <p><strong>AI/ML Engineer | April 2019 – August 2022</strong></p>
+    <p>
+      At Target, I developed AI-powered systems for demand forecasting and personalized shopping experiences. I built scalable pipelines for real-time analytics and recommendation engines.
+    </p>
+    <ul>
+      <li>Built enterprise AI/ML platforms on GCP for demand forecasting and personalization.</li>
+      <li>Developed hybrid RAG pipelines and GenAI-based recommendation systems.</li>
+      <li>Engineered semantic search pipelines using BERT, FAISS, and Pinecone.</li>
+      <li>Implemented backend microservices and real-time data processing pipelines.</li>
+      <li>Developed dashboards in Angular and Power BI for actionable retail insights.</li>
+      <li>Optimized ML models for prediction accuracy and inventory optimization.</li>
+    </ul>
+
+    <!-- Travelers -->
+    <h3>🚗 Travelers Companies</h3>
+    <p><strong>Data Science Engineer | Sept 2017 – March 2019</strong></p>
+    <ul>
+      <li>Built enterprise AI platforms for insurance risk analysis and claim prediction.</li>
+      <li>Developed fraud detection and risk scoring models using ML/DL pipelines.</li>
+      <li>Engineered data pipelines for real-time insurance analytics.</li>
+      <li>Created dashboards for claims insights and fraud alerts.</li>
+      <li>Built backend APIs and semantic search pipelines with BERT and FAISS.</li>
+    </ul>
+
+    <!-- Krios -->
+    <h3>🏥 Krios Info Solutions</h3>
+    <p><strong>Data Engineer | June 2015 – April 2017</strong></p>
+    <ul>
+      <li>Developed scalable data pipelines using Spark, Kafka, and Airflow.</li>
+      <li>Built ML/DL models for claims validation and anomaly detection.</li>
+      <li>Implemented semantic search pipelines using BERT embeddings.</li>
+      <li>Built dashboards and backend services for real-time claims monitoring.</li>
+    </ul>
   </div>
-</section>
 
-<!-- TABS -->
-<div class="tabs">
-  <button data-tab="about">About</button>
-  <button data-tab="experience">Experience</button>
-  <button data-tab="projects">Projects</button>
-  <button data-tab="skills">Skills</button>
-</div>
+  <!-- Projects Tab -->
+  <div id="projects" class="tab-content">
+    <h2>🚀 Projects</h2>
 
-<!-- CONTENT -->
-<div class="tab-wrapper">
+    <!-- PNC Project -->
+    <h3>🏦 AI-Driven Customer Insights & Fraud Detection Platform</h3>
+    <p><strong>Tech:</strong> AWS (SageMaker, EKS, EC2), LangChain, LangGraph, Pinecone, FAISS, Python, FastAPI, Angular, Spark, Kafka</p>
+    <ul>
+      <li>Architected enterprise AI platform for fraud detection and customer insights</li>
+      <li>Built advanced RAG pipelines with hybrid retrieval and contextual re-ranking</li>
+      <li>Developed LLM-powered AI agents with multi-step reasoning workflows</li>
+      <li>Engineered real-time and batch data pipelines using Spark, Kafka, and Airflow</li>
+      <li>Improved inference throughput by 40% and reduced latency by 32%</li>
+      <li>Implemented RAG evaluation using RAGAS to improve accuracy and reduce hallucinations</li>
+      <li>Built Angular dashboards improving fraud visibility by 50% and reducing investigation time by 30%</li>
+    </ul>
 
-<!-- ABOUT -->
-<div id="about" class="tab active">
-<h2>About Me</h2>
+    <!-- Humana Project -->
+    <h3>🏥 Patient Health Data Analytics & Predictive Care System</h3>
+    <p><strong>Tech:</strong> Azure ML, AKS, Python, FastAPI, ReactJS, Pinecone, FAISS, Spark, Kafka, TensorFlow, PyTorch</p>
+    <ul>
+      <li>Designed AI platform for predictive patient care and healthcare analytics</li>
+      <li>Built semantic search and retrieval systems for clinical data insights</li>
+      <li>Developed GenAI prototypes and multi-agent reasoning workflows</li>
+      <li>Built ML models for patient risk prediction and preventive care</li>
+      <li>Engineered scalable data pipelines using Spark, Kafka, and Airflow</li>
+      <li>Developed dashboards in ReactJS for real-time insights</li>
+    </ul>
 
-<p>I am a passionate Senior Generative AI & Machine Learning Engineer with over 10+ years of experience designing and delivering scalable, enterprise-grade AI solutions. My expertise lies in building intelligent systems powered by Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and cloud-native architectures.</p>
-<p>Currently, I work at a leading financial institution where I develop advanced AI solutions that enhance business decision-making, automate workflows, and improve customer experiences. I have hands-on experience across the full AI lifecycle — from data engineering and model development to deployment and optimization.</p>
-<p>I specialize in:</p>
+    <!-- Target Project -->
+    <h3>🛒 AI Demand Forecasting & Personalization Platform</h3>
+    <p><strong>Tech:</strong> GCP (Vertex AI, GKE), Python, FastAPI, Angular, Power BI, Pinecone, FAISS, Spark, Kafka</p>
+    <ul>
+      <li>Built AI platform for demand forecasting and personalized shopping experiences</li>
+      <li>Implemented GenAI-driven recommendation PoCs and hybrid RAG pipelines</li>
+      <li>Built embedding pipelines for semantic search of product catalogs and user data</li>
+      <li>Developed real-time dashboards for actionable retail insights</li>
+    </ul>
 
-<ul>
-  <li>Generative AI & LLM applications (OpenAI, Azure OpenAI, LangChain)</li>
-  <li>Designing RAG pipelines and vector search systems</li>
-  <li>Building scalable backend systems using Python & FastAPI</li>
-  <li>Cloud platforms including AWS, Azure, and Google Cloud (GCP)</li>
-  <li>MLOps, CI/CD pipelines, and production-grade deployments</li>
-</ul>
-  <p>Throughout my career, I have worked with organizations across finance, healthcare, retail, and insurance domains, delivering impactful AI-driven solutions that solve real-world problems.</p>
-<p>I am particularly interested in pushing the boundaries of Agentic AI, autonomous systems, and next-generation AI applications that can reason, adapt, and operate independently.</p>
+    <!-- Travelers Project -->
+    <h3>🚗 Insurance Claim Prediction & Risk Analytics Platform</h3>
+    <p><strong>Tech:</strong> AWS (SageMaker, EC2), Python, FastAPI, ReactJS, Spark, Kafka, TensorFlow, PyTorch</p>
+    <ul>
+      <li>Developed AI models for insurance claim prediction and risk assessment</li>
+      <li>Built semantic search systems for claims and policy data</li>
+      <li>Implemented fraud detection and risk scoring models</li>
+      <li>Designed scalable pipelines for real-time insurance analytics</li>
+      <li>Built dashboards for claims insights, fraud alerts, and risk monitoring</li>
+    </ul>
 
-</div>
+    <!-- Krios Project -->
+    <h3>🏥 Healthcare Claims Processing & Analytics Platform</h3>
+    <p><strong>Tech:</strong> Azure, Python, FastAPI, ReactJS, Spark, Kafka, TensorFlow</p>
+    <ul>
+      <li>Developed data pipelines for healthcare claims processing and analytics</li>
+      <li>Built ML models for anomaly detection and claims validation</li>
+      <li>Implemented semantic search for structured and unstructured healthcare data</li>
+      <li>Built dashboards for claims analytics and KPI monitoring</li>
+      <li>Ensured HIPAA-compliant secure healthcare data systems</li>
+    </ul>
+  </div>
 
-<!-- EXPERIENCE -->
-<h2>💼 Experience</h2>
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.tab-content');
 
-<!-- PNC -->
-<h3>🏦 PNC Financial Services</h3>
-<p><strong>GenAI Engineer | May 2024 – Present</strong></p>
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
 
-<p>
-At PNC, I build enterprise-grade Generative AI solutions that enable intelligent automation and enhance how financial data is consumed across the organization. My work focuses on designing **LLM-powered applications, AI agents, and RAG-based systems** that allow natural language querying over large financial datasets with high accuracy and compliance.
-</p>
-
-<p>
-I architect enterprise AI platforms on **AWS (SageMaker, EKS, EC2, Lambda, S3, RDS)**, designing highly scalable, secure, and fault-tolerant systems. I implement **AI copilots and multi-step reasoning workflows** to automate complex financial processes, including fraud detection and decision support.
-</p>
-
-<p>
-I develop **high-performance Python/FastAPI microservices** with async APIs, caching, and optimized data pipelines, improving inference throughput by 40% and reducing latency by 32%. I also manage end-to-end **data pipelines using Apache Spark, Kafka, and Airflow** for batch and real-time processing.
-</p>
-
-<p>
-I build semantic search and vector retrieval pipelines using **BERT, Pinecone, and FAISS**, integrated with structured and unstructured enterprise data in Snowflake and PostgreSQL. I optimize LLM outputs using **prompt engineering, RAG evaluation, and observability frameworks** (Prometheus, Grafana, CloudWatch).
-</p>
-
-<p>
-I design secure APIs with **OAuth2/JWT**, maintain CI/CD pipelines, and deploy containerized services on **Kubernetes**, ensuring enterprise-grade compliance and high availability. I collaborate across Agile teams to deliver reliable production-grade AI systems.
-</p>
-
-<ul>
-  <li>Built enterprise LLM systems, RAG pipelines, fraud detection platforms, and AI agents using AWS.</li>
-  <li>Designed multi-step reasoning workflows and AI copilots for internal productivity.</li>
-  <li>Developed high-throughput Python/FastAPI microservices, reducing latency by 32%.</li>
-  <li>Built embedding and semantic search pipelines with BERT, Pinecone, and FAISS.</li>
-  <li>Managed Spark/Kafka/Airflow pipelines for batch and real-time AI processing.</li>
-  <li>Implemented prompt engineering strategies to improve AI faithfulness and relevancy.</li>
-  <li>Deployed scalable microservices on Kubernetes and automated infrastructure with Terraform.</li>
-  <li>Built interactive dashboards using Angular, improving alert visibility by 50%.</li>
-  <li>Implemented CI/CD pipelines, secure authentication, and observability frameworks.</li>
-  <li>Delivered full lifecycle AI solutions from ingestion to deployment and monitoring.</li>
-</ul>
-
-<!-- Humana -->
-<h3>🏥 Humana</h3>
-<p><strong>Senior AI/ML Engineer | Sept 2022 – April 2024</strong></p>
-
-<p>
-At Humana, I built AI-driven healthcare platforms for predictive patient care, clinical data analytics, and operational efficiency. My work involved **semantic search, GenAI prototypes, and multi-agent reasoning workflows** for patient outcome prediction.
-</p>
-
-<p>
-I designed **retrieval pipelines and embedding workflows using BERT, FAISS, and Pinecone**, integrating structured and unstructured clinical data from Snowflake and PostgreSQL. I also developed backend microservices using Python and FastAPI for high-throughput AI inference.
-</p>
-
-<p>
-I created interactive dashboards in ReactJS for patient risk scoring, predictive alerts, and operational insights. I implemented **secure authentication (OAuth2/JWT) and HIPAA compliance**, ensuring patient data security.
-</p>
-
-<ul>
-  <li>Built predictive patient care systems using Azure ML and AKS.</li>
-  <li>Developed semantic search pipelines for structured and unstructured clinical data.</li>
-  <li>Built multi-agent GenAI workflows for predictive analytics and recommendations.</li>
-  <li>Engineered real-time data pipelines using Spark, Kafka, and Airflow.</li>
-  <li>Implemented backend APIs with Python/FastAPI for high-throughput AI services.</li>
-  <li>Developed interactive dashboards using ReactJS for healthcare insights.</li>
-  <li>Ensured HIPAA-compliant secure access and data governance.</li>
-  <li>Optimized model outputs with evaluation and prompt strategies.</li>
-</ul>
-
-<!-- Target -->
-<h3>🛒 Target Corporation</h3>
-<p><strong>AI/ML Engineer | April 2019 – August 2022</strong></p>
-
-<p>
-At Target, I developed **AI-powered demand forecasting and personalized shopping experiences** using GCP platforms. I built scalable pipelines for real-time analytics and recommendation engines.
-</p>
-
-<p>
-I worked on **GenAI-driven personalization, hybrid RAG pipelines, and semantic search** for product catalogs and user behavior data. I also designed backend APIs using Python and FastAPI and dashboards using Angular and Power BI.
-</p>
-
-<ul>
-  <li>Built enterprise AI/ML platforms on GCP for demand forecasting and personalization.</li>
-  <li>Developed hybrid RAG pipelines and GenAI-based recommendation systems.</li>
-  <li>Engineered semantic search pipelines using BERT, FAISS, and Pinecone.</li>
-  <li>Implemented backend microservices and real-time data processing pipelines.</li>
-  <li>Developed dashboards in Angular and Power BI for actionable retail insights.</li>
-  <li>Optimized ML models for prediction accuracy and inventory optimization.</li>
-</ul>
-
-<!-- Travelers -->
-<h3>🚗 Travelers Companies</h3>
-<p><strong>Data Science Engineer | Sept 2017 – March 2019</strong></p>
-
-<p>
-At Travelers, I worked on **insurance claim prediction, fraud detection, and risk analytics**. I developed scalable data pipelines, ML/DL models, and semantic search for structured and unstructured claims and policy data.
-</p>
-
-<ul>
-  <li>Built enterprise AI platforms for insurance risk analysis and claim prediction.</li>
-  <li>Developed fraud detection and risk scoring models using ML/DL pipelines.</li>
-  <li>Engineered data pipelines for real-time insurance analytics.</li>
-  <li>Created dashboards for claims insights and fraud alerts.</li>
-  <li>Built backend APIs and semantic search pipelines with BERT and FAISS.</li>
-</ul>
-
-<!-- Krios -->
-<h3>🏥 Krios Info Solutions</h3>
-<p><strong>Data Engineer | June 2015 – April 2017</strong></p>
-
-<p>
-At Krios, I built **ETL pipelines, healthcare analytics systems, and machine learning workflows** for claims processing. I worked on semantic search, data processing, and secure, HIPAA-compliant backend services.
-</p>
-
-<ul>
-  <li>Developed scalable data pipelines using Spark, Kafka, and Airflow.</li>
-  <li>Built ML/DL models for claims validation and anomaly detection.</li>
-  <li>Implemented semantic search pipelines using BERT embeddings.</li>
-  <li>Built dashboards and backend services for real-time claims monitoring.</li>
-</ul>
-<!-- PROJECTS -->
-<h2>💼 Experience</h2>
-
-<!-- PNC -->
-<h3>🏦 PNC Financial Services</h3>
-<p><strong>Senior Generative AI Engineer | May 2024 – Present</strong></p>
-
-<p>
-At PNC, I lead the design and development of enterprise-grade Generative AI systems focused on fraud detection and customer insights. I architect scalable AI platforms using AWS services, enabling intelligent automation and real-time financial data analysis across large-scale systems.
-</p>
-
-<p>
-I design advanced Retrieval-Augmented Generation (RAG) pipelines with hybrid search, contextual re-ranking, and vector databases to deliver highly accurate, context-aware insights. I also build LLM-powered AI agents and multi-step reasoning workflows to automate complex financial processes and decision-making.
-</p>
-
-<p>
-My role involves developing high-performance backend services using Python and FastAPI, optimizing APIs for low latency and high throughput. I have improved system performance significantly by implementing async processing, caching strategies, and efficient data handling techniques.
-</p>
-
-<p>
-I work extensively on building scalable data pipelines using Apache Spark, Kafka, and Airflow, supporting both batch and real-time AI workloads. Additionally, I implement model evaluation frameworks such as RAGAS to improve accuracy, reduce hallucinations, and ensure reliable AI outputs.
-</p>
-
-<p>
-I collaborate with cross-functional teams to deliver secure, compliant, and production-ready systems. I also contribute to cloud infrastructure automation using Terraform, CI/CD pipelines, and observability frameworks to ensure system reliability and scalability.
-</p>
-
-<!-- Humana -->
-<h3>🏥 Humana</h3>
-<p><strong>Senior AI/ML Engineer | Sept 2022 – April 2024</strong></p>
-
-<p>
-At Humana, I built AI-driven healthcare platforms focused on predictive patient care and clinical data analytics. I designed scalable AI systems on Azure to process and analyze large volumes of patient data, enabling data-driven healthcare decisions.
-</p>
-
-<p>
-I developed intelligent retrieval systems and semantic search pipelines to extract insights from structured and unstructured clinical data. I also worked on GenAI prototypes and multi-agent workflows to enhance predictive healthcare capabilities.
-</p>
-
-<p>
-My responsibilities included building machine learning models for patient risk prediction and preventive care using TensorFlow and PyTorch. I also developed backend services using Python and FastAPI to serve high-performance AI models.
-</p>
-
-<p>
-I engineered real-time and batch data pipelines using Spark, Kafka, and Airflow to support continuous data processing and analytics. Additionally, I implemented secure authentication mechanisms ensuring HIPAA-compliant data access.
-</p>
-
-<p>
-I collaborated with stakeholders to deliver dashboards and visualization tools that provided actionable insights into patient health, risk scoring, and operational performance.
-</p>
-
-<!-- Target -->
-<h3>🛒 Target Corporation</h3>
-<p><strong>AI/ML Engineer | April 2019 – August 2022</strong></p>
-
-<p>
-At Target, I developed AI-powered systems for demand forecasting and personalized shopping experiences. I worked on building scalable machine learning models to analyze customer behavior and optimize inventory management.
-</p>
-
-<p>
-I designed recommendation systems and GenAI-driven personalization solutions to improve customer engagement. I also implemented semantic search pipelines for product catalogs and user behavior analysis.
-</p>
-
-<p>
-My role involved building backend services using Python and FastAPI, along with real-time data pipelines using Spark and Kafka. These systems enabled high-throughput data processing and analytics.
-</p>
-
-<p>
-I worked on dashboards and reporting tools using Angular and Power BI, delivering actionable insights for business teams. I also contributed to model optimization and performance tuning for better accuracy and efficiency.
-</p>
-
-<!-- Travelers -->
-<h3>🚗 Travelers Companies</h3>
-<p><strong>Senior Data Science Engineer | Sept 2017 – March 2019</strong></p>
-
-<p>
-At Travelers, I focused on developing AI and data science solutions for insurance claim prediction and risk analytics. I built machine learning models to assess risk, detect fraud, and improve claims processing efficiency.
-</p>
-
-<p>
-I designed scalable data pipelines and analytics systems to process insurance data in real time. I also implemented semantic search solutions for claims and policy data insights.
-</p>
-
-<p>
-My work included developing backend services and deploying ML models for predictive analytics. I also contributed to monitoring and optimizing system performance for production environments.
-</p>
-
-<!-- Krios -->
-<h3>🏥 Krios Info Solutions</h3>
-<p><strong>Data Engineer | June 2015 – April 2017</strong></p>
-
-<p>
-At Krios, I built data engineering pipelines and analytics systems for healthcare claims processing. I worked on transforming large-scale healthcare data into structured formats for analysis and reporting.
-</p>
-
-<p>
-I developed ETL pipelines using Spark, Kafka, and Airflow, enabling efficient data processing and integration. I also implemented machine learning models for anomaly detection and claims validation.
-</p>
-
-<p>
-My role included building backend services and dashboards for monitoring claims data, KPIs, and system performance. I ensured secure and compliant data handling practices throughout the system.
-</p>
-
-<!-- SKILLS -->
-<div id="skills" class="tab">
-<h2>Skills</h2>
-
-<p><b>GenAI:</b> GPT-4, LangChain, RAG, Agents</p>
-<p><b>ML:</b> TensorFlow, PyTorch</p>
-<p><b>Cloud:</b> AWS, Azure, GCP</p>
-<p><b>Data:</b> Spark, Kafka, Snowflake</p>
-<p><b>DevOps:</b> Docker, Kubernetes</p>
-
-</div>
-
-</div>
-
-<!-- SCRIPT -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const buttons = document.querySelectorAll(".tabs button");
-  const tabs = document.querySelectorAll(".tab");
-  const hero = document.getElementById("heroSection");
-
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      const target = button.getAttribute("data-tab");
-
-      tabs.forEach(tab => tab.classList.remove("active"));
-      document.getElementById(target).classList.add("active");
-
-      // FIX: hide completely
-      if (target === "about") {
-        hero.style.display = "flex";
-      } else {
-        hero.style.display = "none";
-      }
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
     });
-  });
-
-  // Expand projects
-  document.querySelectorAll(".card").forEach(card => {
-    card.addEventListener("click", () => {
-      card.classList.toggle("open");
-    });
-  });
-
-});
-</script>
+  </script>
 
 </body>
 </html>
