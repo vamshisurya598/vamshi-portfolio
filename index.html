@@ -37,17 +37,9 @@
         <h1 class="fade-in-name">Vamshi Surya</h1>
         <h2 id="typed-title"></h2>
 
-        <p><b>Email:</b> 
-          <span style="color:red; font-weight:bold;">vamshisurya598@gmail.com</span>
-        </p>
-
-        <p><b>Phone:</b> 
-          <a href="tel:+19172661311" class="contact-link">+1 (917) 266-1311</a>
-        </p>
-
-        <p><b>LinkedIn:</b> 
-          <a href="https://www.linkedin.com/in/vamshi-surya598/" target="_blank">View Profile</a>
-        </p>
+        <p><b>Email:</b> <span style="color:red; font-weight:bold;">vamshisurya598@gmail.com</span></p>
+        <p><b>Phone:</b> <a href="tel:+19172661311" class="contact-link">+1 (917) 266-1311</a></p>
+        <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/vamshi-surya598/" target="_blank">View Profile</a></p>
 
         <p class="summary">
           Senior Generative AI & ML Engineer with 10+ years of experience delivering enterprise-scale AI systems across finance, healthcare, retail, and insurance. 
@@ -221,21 +213,19 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", () => {
       const target = button.getAttribute("data-tab");
       tabs.forEach(tab => tab.classList.remove("active"));
-      document.getElementById(target).classList.add("active');
+      document.getElementById(target).classList.add("active");
 
       buttons.forEach(btn => btn.classList.remove("active"));
       button.classList.add("active");
     });
   });
 
-  // Expand project/experience cards
+  // Expand cards
   const cards = document.querySelectorAll(".card");
-  cards.forEach(card => {
-    card.addEventListener("click", () => card.classList.toggle("open"));
-  });
+  cards.forEach(card => card.addEventListener("click", () => card.classList.toggle("open")));
 });
 
-// Typing effect for title
+// Typing effect
 const text = "Senior Generative AI & ML Engineer";
 let index = 0;
 const typedElement = document.getElementById("typed-title");
