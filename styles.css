@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+/* =====================
+   General Styles
+   ===================== */
 body {
   margin: 0;
   font-family: Arial;
@@ -8,31 +11,28 @@ body {
   color: #111;
 }
 
-
-
+/* =====================
+   Hero Section
+   ===================== */
 .hero {
   display: flex;
   padding: 40px;
-  background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff6a00, #ffd700);
-  background-size: 400% 400%;
+  background: white;
   gap: 40px;
   align-items: center;
-  animation: gradientBG 15s ease infinite;
-  color: white; /* Make text readable on colorful background */
 }
 
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+.left { flex: 1; }
+.right { flex: 2; }
 
-/* Profile image adjustments */
 .profile-img {
-  width: 250px; /* smaller so gradient shows behind text */
+  width: 300px;
   border-radius: 10px;
 }
 
+/* =====================
+   Tabs
+   ===================== */
 .tabs {
   display: flex;
   justify-content: center;
@@ -51,29 +51,10 @@ body {
   background: #333;
 }
 
-.tabs button {
-  color: white;
-  padding: 15px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: relative;
-}
-
-.tabs button:hover::after,
-.tabs button.active::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3px;
-  background: #ffd700;
-  transition: all 0.3s ease;
-}
-.tab-wrapper {
-  padding: 30px;
-}
+/* =====================
+   Tab Content
+   ===================== */
+.tab-wrapper { padding: 30px; }
 
 .tab {
   display: none;
@@ -89,24 +70,74 @@ body {
   to { transform: translateX(0); opacity: 1; }
 }
 
+/* =====================
+   Cards (Experience & Projects)
+   ===================== */
 .card {
   background: white;
   padding: 20px;
   margin: 15px 0;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: box-shadow 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .details {
   display: none;
+  margin-top: 10px;
 }
 
 .card.open .details {
   display: block;
+}
+
+/* =====================
+   Hero Hiding for Tabs
+   ===================== */
+.hide-hero {
+  display: none;
+}
+
+/* =====================
+   Links Styling
+   ===================== */
+a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   Responsive for Mobile
+   ===================== */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .right {
+    flex: unset;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tabs button {
+    flex: 1 1 50%;
+    margin: 2px 0;
+  }
 }
