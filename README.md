@@ -41,7 +41,7 @@ Python | LLMs | LangChain | RAG | AWS | GCP | Azure | Docker | Kubernetes
 
 ## 📬 Contact
 - 📧 vamshisurya598@gmail.com  
-- 💼 LinkedIn: (add your link)
+- 💼 LinkedIn:linkedin.com/in/vamshi-surya598
 
 ---
 
