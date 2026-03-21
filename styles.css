@@ -10,38 +10,29 @@ body {
 
 
 
-/* HERO SECTION WITH TRUE INDIAN FLAG COLORS FADE */
+/* HERO SECTION WITH TRUE INDIAN FLAG FADE */
 .hero {
   display: flex;
   padding: 40px;
   gap: 40px;
   align-items: center;
 
-  /* Horizontal Indian flag fade (top → bottom) */
-  background: linear-gradient(to bottom, 
-              #FF9933 0%,    /* Saffron */
-              #FF9933 33%,   /* Saffron end */
-              #FFFFFF 34%,   /* White start */
-              #FFFFFF 66%,   /* White end */
-              #138808 67%,   /* Green start */
-              #138808 100%); /* Green end */
-  
-  /* Optional: animate slowly horizontally for subtle movement */
-  background-size: 200% 200%;
-  animation: flagGradient 15s ease infinite;
+  /* Subtle saffron → cream → green horizontal gradient */
+  background: linear-gradient(90deg, #FF9933, #FFF7E6, #138808, #FFF7E6, #FF9933);
+  background-size: 400% 400%;
+  animation: flagGradient 20s ease infinite;
 
-  /* Text color readable on white/mixed background */
-  color: black;
+  color: black; /* text readable */
 }
 
-/* Animate the gradient slowly */
+/* Gradient animation */
 @keyframes flagGradient {
-  0% { background-position: 0% 0%; }
-  50% { background-position: 100% 0%; }
-  100% { background-position: 0% 0%; }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-/* Hero text styling */
+/* Hero text */
 .hero .right h1,
 .hero .right h2,
 .hero .right p {
