@@ -1,12 +1,10 @@
-/* Global Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   background: #f5f5f5;
   color: #111;
 }
 
-/* Hero Section */
 .hero {
   display: flex;
   padding: 40px;
@@ -28,7 +26,6 @@ body {
   border-radius: 10px;
 }
 
-/* Tabs */
 .tabs {
   display: flex;
   justify-content: center;
@@ -47,7 +44,6 @@ body {
   background: #333;
 }
 
-/* Tab Content */
 .tab-wrapper {
   padding: 30px;
 }
@@ -61,7 +57,6 @@ body {
   display: block;
 }
 
-/* Slide Animation */
 @keyframes slide {
   from {
     transform: translateX(40px);
@@ -73,7 +68,6 @@ body {
   }
 }
 
-/* Cards */
 .card {
   background: white;
   padding: 20px;
