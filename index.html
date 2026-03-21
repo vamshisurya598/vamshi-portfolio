@@ -21,7 +21,7 @@
 
   <div class="right">
     <h1>Vamshi Surya</h1>
-    <h2>Senior Generative AI & ML Engineer</h2>
+   <h2><span id="typed-title"></span></h2>
 
    <p><b>Email:</b> 
   <a href="mailto:vamshisurya598@gmail.com" target="_blank">
@@ -250,6 +250,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+<script>
+const text = "Senior Generative AI & ML Engineer";
+let index = 0;
+const typedElement = document.getElementById("typed-title");
 
+function typeTitle() {
+  if(index < text.length){
+    typedElement.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeTitle, 100); // speed of typing
+  }
+}
+
+document.addEventListener("DOMContentLoaded", typeTitle);
+</script>
 </body>
 </html>
