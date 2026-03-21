@@ -8,18 +8,17 @@ body {
   color: #111;
 }
 
-/* HERO SECTION WITH ANIMATED GRADIENT */
-/* HERO SECTION WITH INDIAN FLAG COLORS GRADIENT */
+
+/* HERO SECTION WITH SUBTLE FADING INDIA FLAG COLORS */
 .hero {
   display: flex;
   padding: 40px;
-  /* gradient: saffron → light background → green → golden */
-  background: linear-gradient(-45deg, #FF9933, #FFFFFF, #138808, #FFD700);
-  background-size: 400% 400%;
+  background: linear-gradient(-45deg, #FF9933, #FFFFFF, #138808, #FFFFFF, #FF9933);
+  background-size: 600% 600%; /* allows smooth animation */
   gap: 40px;
   align-items: center;
   animation: gradientBG 15s ease infinite;
-  color: white; /* text shows on colorful background */
+  color: black; /* use black so text is readable on white areas */
 }
 
 /* Gradient animation keyframes */
@@ -33,7 +32,7 @@ body {
 .hero .right h1,
 .hero .right h2,
 .hero .right p {
-  color: white; /* ensures all text is visible */
+  color: black; /* ensures all text is readable */
 }
 
 /* Profile image adjustments */
