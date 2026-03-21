@@ -173,10 +173,9 @@ body {
   height: 15px;
   background: #2575fc;
   border-radius: 8px;
-  width: 0; /* will animate via JS */
+  width: 0;
   transition: width 1s ease-in-out;
 }
-
 /* ==========================
    SMOOTH SCROLL
 ========================== */
@@ -190,3 +189,8 @@ html {
 .hide-hero {
   display: none;
 }
+document.querySelectorAll('.skill-fill').forEach(bar => {
+  const width = bar.style.width;
+  bar.style.width = '0';
+  setTimeout(() => { bar.style.width = width; }, 500);
+});
