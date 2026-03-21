@@ -10,7 +10,17 @@ html { scroll-behavior: smooth; }
   from { opacity:0; transform:translateY(-20px); }
   to { opacity:1; transform:translateY(0); }
 }
+/* FADE-IN ANIMATION FOR PROFILE IMAGE */
+.fade-in-photo {
+  opacity: 0;                  /* start invisible */
+  animation: fadeInPhoto 2s ease forwards;  /* animation duration & easing */
+  animation-delay: 0.5s;       /* optional delay to start after page loads */
+}
 
+@keyframes fadeInPhoto {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 /* BODY */
 body {
   margin:0;
