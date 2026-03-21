@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /* FADE-IN EFFECT FOR NAME */
 .fade-in-name {
   opacity: 0;                 /* start invisible */
@@ -106,6 +109,12 @@ body {
   margin: 15px 0;
   border-radius: 8px;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .details {
