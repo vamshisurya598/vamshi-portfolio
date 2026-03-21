@@ -22,7 +22,7 @@ body {
 .hero {
   display: flex;
   padding: 40px;
-  background: linear-gradient(-45deg, #232526, #414345, #2c3e50, #000000);
+  background: linear-gradient(-45deg, #5f2c82, #49a09d, #6a11cb, #2575fc);
   background-size: 400% 400%;
   gap: 40px;
   align-items: center;
