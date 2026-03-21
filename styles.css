@@ -9,20 +9,21 @@ body {
 }
 
 
-/* HERO SECTION WITH SUBTLE FADING INDIA FLAG COLORS */
+
+/* HERO SECTION WITH SMOOTH INDIAN FLAG FADE */
 .hero {
   display: flex;
   padding: 40px;
-  background: linear-gradient(-45deg, #FF9933, #FFFFFF, #138808, #FFFFFF, #FF9933);
-  background-size: 600% 600%; /* allows smooth animation */
+  background: linear-gradient(-45deg, #ffb366 0%, #fffde7 25%, #b2e2a3 50%, #fffde7 75%, #ffb366 100%);
+  background-size: 600% 600%; /* allow smooth animation */
   gap: 40px;
   align-items: center;
-  animation: gradientBG 15s ease infinite;
-  color: black; /* use black so text is readable on white areas */
+  animation: flagGradient 20s ease infinite;
+  color: #111; /* text color readable on light gradient */
 }
 
-/* Gradient animation keyframes */
-@keyframes gradientBG {
+/* Animate the gradient to slowly move */
+@keyframes flagGradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
@@ -32,12 +33,12 @@ body {
 .hero .right h1,
 .hero .right h2,
 .hero .right p {
-  color: black; /* ensures all text is readable */
+  color: #111; /* readable on gradient */
 }
 
 /* Profile image adjustments */
 .profile-img {
-  width: 250px; /* slightly smaller so gradient shows behind text */
+  width: 250px; /* smaller so gradient shows behind text */
   border-radius: 10px;
 }
 
