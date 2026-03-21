@@ -14,31 +14,37 @@ body {
 .hero {
   display: flex;
   padding: 40px;
-  background: linear-gradient(-45deg, #ffb366 0%, #fffde7 25%, #b2e2a3 50%, #fffde7 75%, #ffb366 100%);
-  background-size: 600% 600%; /* allow smooth animation */
   gap: 40px;
   align-items: center;
-  animation: flagGradient 20s ease infinite;
-  color: #111; /* text color readable on light gradient */
+
+  /* Smooth Indian flag gradient */
+  background: linear-gradient(270deg, #FF9933, #FFFFFF, #138808);
+  background-size: 600% 600%;
+
+  /* Animate the gradient */
+  animation: flagGradient 15s ease infinite;
+
+  /* Text color for readability */
+  color: black;
 }
 
-/* Animate the gradient to slowly move */
+/* Gradient animation keyframes */
 @keyframes flagGradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Hero right-side text */
+/* Hero text color */
 .hero .right h1,
 .hero .right h2,
 .hero .right p {
-  color: #111; /* readable on gradient */
+  color: black;
 }
 
 /* Profile image adjustments */
 .profile-img {
-  width: 250px; /* smaller so gradient shows behind text */
+  width: 250px;
   border-radius: 10px;
 }
 
