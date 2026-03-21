@@ -138,7 +138,7 @@ body {
    CARDS
 ========================== */
 .card {
-  background: rgba(255, 255, 255, 0.85); /* semi-transparent */
+  background: white;
   padding: 20px;
   margin: 15px 0;
   border-radius: 8px;
