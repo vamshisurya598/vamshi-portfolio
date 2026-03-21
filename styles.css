@@ -1,200 +1,67 @@
-
-/* ==========================
-   BODY & HERO
-========================== */
+/* General body styling */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #ffecd2, #fcb69f, #6a11cb, #2575fc);
-  background-size: 400% 400%;
-  animation: bodyBG 20s ease infinite;
-  color: #111;
+  background: #f5f5f5;
 }
 
-@keyframes bodyBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-
-/* HERO SECTION WITH ANIMATED GRADIENT */
-/* HERO SECTION WITH INDIAN FLAG COLORS GRADIENT */
-.hero {
-  display: flex;
-  padding: 40px;
-  /* gradient: saffron → light background → green → golden */
-  background: linear-gradient(-45deg, #FF9933, #FFFFFF, #138808, #FFD700);
-  background-size: 400% 400%;
-  gap: 40px;
-  align-items: center;
-  animation: gradientBG 15s ease infinite;
-  color: white; /* text shows on colorful background */
-}
-
-/* Gradient animation keyframes */
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Hero right-side text */
-.hero .right h1,
-.hero .right h2,
-.hero .right p {
-  color: white; /* ensures all text is visible */
-}
-
-/* Profile image adjustments */
-.profile-img {
-  width: 250px; /* slightly smaller so gradient shows behind text */
-  border-radius: 10px;
-}
-
-/* ==========================
-   TABS
-========================== */
+/* Tabs container */
 .tabs {
   display: flex;
-  justify-content: center;
-  background: black;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  background-color: #333;
 }
 
+/* Tab buttons */
 .tabs button {
   color: white;
-  padding: 15px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: relative; /* needed for underline effect */
-}
-.tabs button {
-  color: white;
-  padding: 15px;
+  padding: 15px 20px;
   background: none;
   border: none;
   cursor: pointer;
   position: relative;
+  font-size: 16px;
+  transition: background 0.3s;
 }
 
-.tabs button:hover::after,
-.tabs button.active::after {
+.tabs button:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* Active tab underline (India flag fade) */
+.tabs button.active::after,
+.tabs button:hover::after {
   content: '';
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 3px;
-  background: #ffd700;
-  transition: all 0.3s ease;
-}
-/* Animated underline on hover & active */
-.tabs button:hover::after,
-.tabs button.active::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3px;
-  background: #ffd700;
-  transition: all 0.3s ease;
+  height: 4px;
+  background: linear-gradient(90deg, #ff9933, #ffffff, #138808);
 }
 
-/* ==========================
-   TAB CONTENT
-========================== */
-.tab-wrapper {
-  padding: 30px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-}
-
-.tab {
-  display: none;
-  animation: slide 0.4s ease;
-}
-
-.tab.active {
-  display: block;
-}
-
-@keyframes slide {
-  from { transform: translateX(40px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
-}
-
-/* Individual tab sections with subtle color */
-#about { background: rgba(255,255,255,0.2); border-radius: 12px; padding: 20px; }
-#experience { background: rgba(255,255,255,0.15); border-radius: 12px; padding: 20px; }
-#projects { background: rgba(255,255,255,0.2); border-radius: 12px; padding: 20px; }
-#skills { background: rgba(255,255,255,0.15); border-radius: 12px; padding: 20px; }
-
-/* ==========================
-   CARDS
-========================== */
-.card {
-  background: white;
+/* Tab content styling */
+.tab-content {
+  display: none; /* hide all tabs by default */
   padding: 20px;
-  margin: 15px 0;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+.tab-content.active {
+  display: block; /* show active tab */
 }
 
-.details {
-  display: none;
-}
-
-.card.open .details {
-  display: block;
-}
-
-/* ==========================
-   SKILL BARS
-========================== */
-<style>
+/* Skill bars */
 .skill-bar {
   width: 100%;
   background-color: #ddd;
   border-radius: 20px;
   margin: 5px 0 20px 0;
   height: 20px;
+  overflow: hidden;
 }
 
 .skill-fill {
   height: 100%;
   background: linear-gradient(90deg, #ff9933, #ffffff, #138808); /* India flag fade */
   border-radius: 20px;
-  transition: width 1.2s ease-in-out; /* optional smooth fill animation */
+  transition: width 1s ease-in-out; /* smooth fill animation */
 }
-</style>
-/* ==========================
-   SMOOTH SCROLL
-========================== */
-html {
-  scroll-behavior: smooth;
-}
-
-/* ==========================
-   HIDE HERO ON OTHER TABS
-========================== */
-.hide-hero {
-  display: none;
-}
-document.querySelectorAll('.skill-fill').forEach(bar => {
-  const width = bar.style.width;
-  bar.style.width = '0';
-  setTimeout(() => { bar.style.width = width; }, 500);
-});
-
-
