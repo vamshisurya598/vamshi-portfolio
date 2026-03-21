@@ -10,22 +10,23 @@ body {
 
 
 
-/* HERO SECTION WITH TRUE INDIAN FLAG FADE */
+/* HERO SECTION WITH FLOWING INDIA FLAG COLORS */
 .hero {
   display: flex;
   padding: 40px;
   gap: 40px;
   align-items: center;
-
-  /* Subtle saffron → cream → green horizontal gradient */
-  background: linear-gradient(90deg, #FF9933, #FFF7E6, #138808, #FFF7E6, #FF9933);
-  background-size: 400% 400%;
+  
+  /* Soft saffron → cream → green gradient */
+  background: linear-gradient(90deg, #FF9933, #FFF8E6, #138808, #FFF8E6, #FF9933);
+  background-size: 300% 300%;
   animation: flagGradient 20s ease infinite;
-
-  color: black; /* text readable */
+  
+  /* Ensure text is readable */
+  color: black;
 }
 
-/* Gradient animation */
+/* Animate the gradient */
 @keyframes flagGradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
