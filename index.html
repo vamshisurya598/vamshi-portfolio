@@ -8,49 +8,6 @@
 </head>
 <body>
 
-<!-- HERO SECTION (VISIBLE ONLY IN ABOUT) -->
-<section class="hero hide-hero">
-  <video autoplay muted loop playsinline class="hero-video">
-    <source src="hero-bg.mp4" type="video/mp4">
-  </video>
-  <div class="hero-overlay"></div>
-
-  <div class="left">
-    <img src="profile.jpg" class="profile-img">
-  </div>
-
-  <div class="right">
-    <h1 class="fade-in-name">Vamshi Surya</h1>
-    <h2 id="typed-title"></h2>
-
-<p><b>Email:</b> 
-  <a href="mailto:vamshisurya598@gmail.com" class="contact-link">
-    vamshisurya598@gmail.com
-  </a>
-</p>
-
-<p><b>Phone:</b> 
-  <a href="tel:+19172661311" class="contact-link">
-    +1 (917) 266-1311
-  </a>
-</p>
-
-<p><b>LinkedIn:</b> 
-  <a href="https://www.linkedin.com/in/vamshi-surya598/" target="_blank">
-    View Profile
-  </a>
-</p>
-
-
-    <p class="summary">
-      Senior Generative AI & ML Engineer with 10+ years of experience delivering enterprise-scale AI systems across finance, healthcare, retail, and insurance. 
-      Specialized in LLMs, RAG architectures, Agentic AI systems, and scalable ML pipelines across AWS, Azure, and GCP.
-    </p>
-
-    <a href="Vamshi_Surya_Resume.pdf" target="_blank" class="resume-btn">View Resume</a>
-  </div>
-</section>
-
 <!-- NAV TABS -->
 <div class="tabs">
   <button data-tab="about" class="active">About</button>
@@ -62,8 +19,46 @@
 <!-- TAB CONTENT -->
 <div class="tab-wrapper">
 
-  <!-- ABOUT -->
+  <!-- ABOUT TAB -->
   <div id="about" class="tab active">
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="hero-bg.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+
+      <div class="left">
+        <img src="profile.jpg" class="profile-img">
+      </div>
+
+      <div class="right">
+        <h1 class="fade-in-name">Vamshi Surya</h1>
+        <h2 id="typed-title"></h2>
+
+        <p><b>Email:</b> 
+          <span style="color:red; font-weight:bold;">vamshisurya598@gmail.com</span>
+        </p>
+
+        <p><b>Phone:</b> 
+          <a href="tel:+19172661311" class="contact-link">+1 (917) 266-1311</a>
+        </p>
+
+        <p><b>LinkedIn:</b> 
+          <a href="https://www.linkedin.com/in/vamshi-surya598/" target="_blank">View Profile</a>
+        </p>
+
+        <p class="summary">
+          Senior Generative AI & ML Engineer with 10+ years of experience delivering enterprise-scale AI systems across finance, healthcare, retail, and insurance. 
+          Specialized in LLMs, RAG architectures, Agentic AI systems, and scalable ML pipelines across AWS, Azure, and GCP.
+        </p>
+
+        <a href="Vamshi_Surya_Resume.pdf" target="_blank" class="resume-btn">View Resume</a>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION BELOW HERO -->
     <section class="about-section">
       <video autoplay muted loop playsinline class="about-video">
         <source src="background.mp4" type="video/mp4">
@@ -78,9 +73,10 @@
         <p>Proven track record of delivering production-grade AI systems handling millions of transactions with real-time decision intelligence.</p>
       </div>
     </section>
+
   </div>
 
-  <!-- EXPERIENCE -->
+  <!-- EXPERIENCE TAB -->
   <div id="experience" class="tab">
     <h2>Professional Experience</h2>
 
@@ -148,7 +144,7 @@
     </div>
   </div>
 
-  <!-- PROJECTS -->
+  <!-- PROJECTS TAB -->
   <div id="projects" class="tab">
     <h2>Projects</h2>
 
@@ -201,7 +197,7 @@
     </div>
   </div>
 
-  <!-- SKILLS -->
+  <!-- SKILLS TAB -->
   <div id="skills" class="tab">
     <h2>Technical Skills</h2>
     <p><b>Generative AI:</b> GPT-4, Claude, LLaMA, RAG, LangChain, LangGraph, AI Agents, Multi-Agent Orchestration</p>
@@ -215,33 +211,31 @@
 
 </div>
 
-<!-- SCRIPT -->
+<!-- SCRIPTS -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".tabs button");
   const tabs = document.querySelectorAll(".tab");
-  const hero = document.querySelector(".hero");
 
   buttons.forEach(button => {
     button.addEventListener("click", () => {
       const target = button.getAttribute("data-tab");
       tabs.forEach(tab => tab.classList.remove("active"));
-      document.getElementById(target).classList.add("active");
+      document.getElementById(target).classList.add("active');
+
       buttons.forEach(btn => btn.classList.remove("active"));
       button.classList.add("active");
-
-      if(target === "about") hero.classList.remove("hide-hero");
-      else hero.classList.add("hide-hero");
     });
   });
 
   // Expand project/experience cards
   const cards = document.querySelectorAll(".card");
-  cards.forEach(card => card.addEventListener("click", () => {
-    card.classList.toggle("open");
-  }));
+  cards.forEach(card => {
+    card.addEventListener("click", () => card.classList.toggle("open"));
+  });
 });
 
+// Typing effect for title
 const text = "Senior Generative AI & ML Engineer";
 let index = 0;
 const typedElement = document.getElementById("typed-title");
