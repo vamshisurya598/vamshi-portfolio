@@ -197,20 +197,4 @@ document.querySelectorAll('.skill-fill').forEach(bar => {
   setTimeout(() => { bar.style.width = width; }, 500);
 });
 
-                    // Animate skills only when Skills tab is active
-const skillsTab = document.getElementById("skills");
-const skillBars = skillsTab.querySelectorAll(".skill-fill");
 
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    const target = button.getAttribute("data-tab");
-
-    if(target === "skills") {
-      skillBars.forEach(bar => {
-        const width = bar.style.width;
-        bar.style.width = '0';
-        setTimeout(() => { bar.style.width = width; }, 500);
-      });
-    }
-  });
-});
