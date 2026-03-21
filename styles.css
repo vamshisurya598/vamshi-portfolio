@@ -20,13 +20,14 @@ body {
 }
 
 .hero {
-  position: relative;   /* IMPORTANT for video layering */
+.hero {
+  position: relative;
   display: flex;
   padding: 40px;
   gap: 40px;
   align-items: center;
   color: white;
-  overflow: hidden;     /* prevents video overflow */
+  overflow: hidden;
 }
 .hero-video {
   position: absolute;
