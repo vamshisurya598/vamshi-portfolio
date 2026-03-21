@@ -32,9 +32,10 @@ body {
   align-items: center;
   color: white;
   overflow: hidden;
+  z-index: 1;
 }
 
-/* HERO VIDEO */
+/* VIDEO */
 .hero-video {
   position: absolute;
   top: 0;
@@ -42,18 +43,18 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 0;
+  z-index: -1;   /* 🔥 PUSH VIDEO BACK */
 }
 
-/* HERO OVERLAY */
+/* OVERLAY */
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.6);
-  z-index: 1;
+  z-index: 0;
 }
 
-/* CONTENT ABOVE VIDEO */
+/* CONTENT */
 .hero .left,
 .hero .right {
   position: relative;
@@ -73,6 +74,9 @@ body {
 .profile-img {
   width: 300px;
   border-radius: 10px;
+  display: block;
+  position: relative;
+  z-index: 3;
 }
 
 /* ================= TABS ================= */
