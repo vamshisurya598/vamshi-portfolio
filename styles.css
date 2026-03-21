@@ -10,20 +10,20 @@ body {
 
 
 
-/* HERO SECTION WITH SMOOTH INDIAN FLAG FADE */
+/* HERO SECTION WITH ANIMATED GRADIENT */
 .hero {
   display: flex;
   padding: 40px;
-  background: linear-gradient(-45deg, #ffb366 0%, #fffde7 25%, #b2e2a3 50%, #fffde7 75%, #ffb366 100%);
-  background-size: 600% 600%; /* allow smooth animation */
+  background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff6a00, #ffd700);
+  background-size: 400% 400%;
   gap: 40px;
   align-items: center;
-  animation: flagGradient 20s ease infinite;
-  color: #111; /* text color readable on light gradient */
+  animation: gradientBG 15s ease infinite;
+  color: white; /* text shows on colorful background */
 }
 
-/* Animate the gradient to slowly move */
-@keyframes flagGradient {
+/* Gradient animation keyframes */
+@keyframes gradientBG {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
@@ -33,7 +33,7 @@ body {
 .hero .right h1,
 .hero .right h2,
 .hero .right p {
-  color: #111; /* readable on gradient */
+  color: white; /* ensures all text is visible */
 }
 
 /* Profile image adjustments */
