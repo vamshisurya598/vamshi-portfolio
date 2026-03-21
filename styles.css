@@ -19,10 +19,12 @@ body {
 
 
 /* HERO SECTION WITH ANIMATED GRADIENT */
+/* HERO SECTION WITH INDIAN FLAG COLORS GRADIENT */
 .hero {
   display: flex;
   padding: 40px;
-  background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff6a00, #ffd700);
+  /* gradient: saffron → light background → green → golden */
+  background: linear-gradient(-45deg, #FF9933, #FFFFFF, #138808, #FFD700);
   background-size: 400% 400%;
   gap: 40px;
   align-items: center;
@@ -46,7 +48,7 @@ body {
 
 /* Profile image adjustments */
 .profile-img {
-  width: 250px; /* smaller so gradient shows behind text */
+  width: 250px; /* slightly smaller so gradient shows behind text */
   border-radius: 10px;
 }
 
