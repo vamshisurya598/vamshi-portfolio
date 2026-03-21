@@ -12,11 +12,33 @@
       background: #f5f5f5;
       color: #333;
     }
+    h1 { color: #2c3e50; margin-bottom: 5px; }
     h2 { color: #2c3e50; margin-top: 40px; }
     h3 { color: #34495e; margin-top: 25px; }
     p { line-height: 1.6; margin: 10px 0; }
     ul { margin: 10px 0 20px 20px; }
     li { margin-bottom: 5px; }
+
+    /* Profile image */
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-right: 20px;
+      object-fit: cover;
+      border: 3px solid #3498db;
+    }
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .profile-info h1 { margin: 0; }
+    .profile-info p { margin: 2px 0 0 0; font-weight: bold; color: #555; }
 
     /* Tabs styling */
     .tabs {
@@ -44,16 +66,17 @@
 </head>
 <body>
 
-  <!-- Tabs -->
-  <div class="tabs">
-    <div class="tab active" data-tab="about">About</div>
-    <div class="tab" data-tab="experience">Experience</div>
-    <div class="tab" data-tab="projects">Projects</div>
-    <div class="tab" data-tab="skills">Skills</div>
+  <!-- Header with Image -->
+  <div class="profile">
+    <img src="your-image.jpg" alt="Vamshi Surya">
+    <div class="profile-info">
+      <h1>Vamshi Surya</h1>
+      <p>Senior Generative AI & ML Engineer</p>
+    </div>
   </div>
 
-  <!-- About Tab -->
-  <div id="about" class="tab-content active">
+  <!-- About Me (always visible) -->
+  <section id="about">
     <h2>👋 About Me</h2>
     <p>Hello! I’m <strong>Vamshi Surya</strong>, a Senior Generative AI & ML Engineer with 10+ years of experience designing, building, and deploying AI solutions across finance, healthcare, retail, and insurance industries.</p>
     <p>I specialize in:</p>
@@ -64,17 +87,21 @@
       <li>Cloud platforms including AWS, Azure, and Google Cloud (GCP)</li>
       <li>MLOps, CI/CD pipelines, and production-grade deployments</li>
     </ul>
+  </section>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <div class="tab active" data-tab="experience">Experience</div>
+    <div class="tab" data-tab="projects">Projects</div>
+    <div class="tab" data-tab="skills">Skills</div>
   </div>
 
   <!-- Experience Tab -->
-  <div id="experience" class="tab-content">
+  <div id="experience" class="tab-content active">
     <h2>💼 Experience</h2>
-
+    <!-- PNC -->
     <h3>🏦 PNC Financial Services</h3>
     <p><strong>GenAI Engineer | May 2024 – Present</strong></p>
-    <p>
-      At PNC, I build enterprise-grade Generative AI solutions enabling intelligent automation and natural language querying over large financial datasets.
-    </p>
     <ul>
       <li>Built enterprise LLM systems, RAG pipelines, and AI agents using AWS</li>
       <li>Developed multi-step reasoning workflows and AI copilots</li>
@@ -87,7 +114,7 @@
       <li>Kubernetes deployment and Terraform automation</li>
       <li>Full lifecycle AI solution delivery from ingestion to monitoring</li>
     </ul>
-
+    <!-- Humana -->
     <h3>🏥 Humana</h3>
     <p><strong>Senior AI/ML Engineer | Sept 2022 – April 2024</strong></p>
     <ul>
@@ -100,7 +127,7 @@
       <li>HIPAA-compliant security and data governance</li>
       <li>Prompt optimization and model evaluation for accuracy</li>
     </ul>
-
+    <!-- Target -->
     <h3>🛒 Target Corporation</h3>
     <p><strong>AI/ML Engineer | April 2019 – August 2022</strong></p>
     <ul>
@@ -111,7 +138,7 @@
       <li>Dashboards in Angular and Power BI for actionable insights</li>
       <li>Optimized ML models for prediction accuracy and inventory management</li>
     </ul>
-
+    <!-- Travelers -->
     <h3>🚗 Travelers Companies</h3>
     <p><strong>Data Science Engineer | Sept 2017 – March 2019</strong></p>
     <ul>
@@ -121,7 +148,7 @@
       <li>Dashboards for claims insights and fraud alerts</li>
       <li>Backend APIs and semantic search pipelines with BERT/FAISS</li>
     </ul>
-
+    <!-- Krios -->
     <h3>🏥 Krios Info Solutions</h3>
     <p><strong>Data Engineer | June 2015 – April 2017</strong></p>
     <ul>
@@ -135,9 +162,7 @@
   <!-- Projects Tab -->
   <div id="projects" class="tab-content">
     <h2>🚀 Projects</h2>
-
     <h3>🏦 AI-Driven Customer Insights & Fraud Detection Platform</h3>
-    <p><strong>Tech:</strong> AWS, LangChain, LangGraph, Pinecone, FAISS, Python, FastAPI, Angular, Spark, Kafka</p>
     <ul>
       <li>Enterprise AI platform for fraud detection and customer insights</li>
       <li>Advanced RAG pipelines with hybrid retrieval & contextual re-ranking</li>
@@ -145,38 +170,12 @@
       <li>Real-time and batch pipelines using Spark, Kafka, Airflow</li>
       <li>Angular dashboards improving fraud visibility by 50%</li>
     </ul>
-
     <h3>🏥 Patient Health Data Analytics & Predictive Care System</h3>
-    <p><strong>Tech:</strong> Azure ML, AKS, Python, FastAPI, ReactJS, Pinecone, FAISS, Spark, Kafka, TensorFlow, PyTorch</p>
     <ul>
       <li>Predictive patient care platform</li>
       <li>Semantic search & multi-agent GenAI workflows</li>
       <li>Python/FastAPI backend microservices</li>
       <li>ReactJS dashboards for real-time clinical insights</li>
-    </ul>
-
-    <h3>🛒 AI Demand Forecasting & Personalization Platform</h3>
-    <p><strong>Tech:</strong> GCP, Python, FastAPI, Angular, Power BI, Pinecone, FAISS, Spark, Kafka</p>
-    <ul>
-      <li>Demand forecasting & personalized shopping AI platform</li>
-      <li>Hybrid RAG pipelines and GenAI recommendation systems</li>
-      <li>Real-time dashboards for retail insights</li>
-    </ul>
-
-    <h3>🚗 Insurance Claim Prediction & Risk Analytics Platform</h3>
-    <p><strong>Tech:</strong> AWS, Python, FastAPI, ReactJS, Spark, Kafka, TensorFlow, PyTorch</p>
-    <ul>
-      <li>Insurance claim prediction and risk analytics AI platform</li>
-      <li>Fraud detection and risk scoring models</li>
-      <li>Real-time data pipelines and dashboards for claims</li>
-    </ul>
-
-    <h3>🏥 Healthcare Claims Processing & Analytics Platform</h3>
-    <p><strong>Tech:</strong> Azure, Python, FastAPI, ReactJS, Spark, Kafka, TensorFlow</p>
-    <ul>
-      <li>ETL pipelines and AI/ML models for healthcare claims processing</li>
-      <li>Semantic search and anomaly detection workflows</li>
-      <li>Dashboards and secure HIPAA-compliant systems</li>
     </ul>
   </div>
 
