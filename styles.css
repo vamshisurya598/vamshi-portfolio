@@ -20,14 +20,13 @@ body {
 }
 
 .hero {
+  position: relative;   /* IMPORTANT for video layering */
   display: flex;
   padding: 40px;
-  background: linear-gradient(-45deg, #1e3c72, #2a5298, #4facfe, #00c6ff);
-  background-size: 400% 400%;
   gap: 40px;
   align-items: center;
-  animation: gradientBG 15s ease infinite;
   color: white;
+  overflow: hidden;     /* prevents video overflow */
 }
 
 @keyframes gradientBG {
