@@ -5,288 +5,226 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vamshi Surya | Senior GenAI Engineer</title>
 <link rel="stylesheet" href="styles.css">
-<style>
-/* Added hide-hero to support JS */
-.hide-hero { display: none; }
-</style>
 </head>
-
 <body>
 
+<!-- HERO SECTION -->
 <section class="hero">
-
-  <!-- HERO BACKGROUND VIDEO -->
   <video autoplay muted loop playsinline class="hero-video">
     <source src="hero-bg.mp4" type="video/mp4">
   </video>
-
-  <!-- DARK OVERLAY -->
   <div class="hero-overlay"></div>
 
-  <!-- LEFT (PROFILE IMAGE) -->
-  <div class="left">
-    <img src="profile.jpg" class="profile-img">
+  <div class="hero-content">
+    <div class="left">
+      <img src="profile.jpg" class="profile-img">
+    </div>
+    <div class="right">
+      <h1 class="fade-in-name">Vamshi Surya</h1>
+      <h2 id="typed-title"></h2>
+
+      <p><b>Email:</b> <a href="mailto:vamshisurya598@gmail.com" class="contact-link">vamshisurya598@gmail.com</a></p>
+      <p><b>Phone:</b> <a href="tel:+19172661311" class="contact-link">+1 (917) 266-1311</a></p>
+      <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/vamshi-surya598/" target="_blank">View Profile</a></p>
+
+      <p class="summary">
+        Senior Generative AI & ML Engineer with 10+ years of experience delivering enterprise-scale AI systems across finance, healthcare, retail, and insurance. Specialized in LLMs, RAG architectures, Agentic AI systems, and scalable ML pipelines across AWS, Azure, and GCP.
+      </p>
+
+      <a href="Vamshi_Surya_Resume.pdf" target="_blank" class="resume-btn">View Resume</a>
+    </div>
   </div>
-
-  <!-- RIGHT (DETAILS) -->
-  <div class="right">
-    <h1 class="fade-in-name">Vamshi Surya</h1>
-    <h2 id="typed-title"></h2>
-
-    <p><b>Email:</b> 
-      <a href="mailto:vamshisurya598@gmail.com" class="contact-link">
-        vamshisurya598@gmail.com
-      </a>
-    </p>
-
-    <p><b>Phone:</b> 
-      <a href="tel:+19172661311" class="contact-link">
-        +1 (917) 266-1311
-      </a>
-    </p>
-
-    <p><b>LinkedIn:</b> 
-      <a href="https://www.linkedin.com/in/vamshi-surya598/" target="_blank">
-        View Profile
-      </a>
-    </p>
-
-    <p class="summary">
-      Senior Generative AI & ML Engineer with 10+ years of experience delivering enterprise-scale AI systems across finance, healthcare, retail, and insurance. 
-      Specialized in LLMs, RAG architectures, Agentic AI systems, and scalable ML pipelines across AWS, Azure, and GCP.
-    </p>
 </section>
-</body>
-</html>
-    <!-- RESUME BUTTON -->
-    <a href="Vamshi_Surya_Resume.pdf" target="_blank" class="resume-btn">
-      View Resume
-    </a>
 
-  </div>
-
-</section>
-<!-- NAV TABS -->
+<!-- NAVIGATION TABS -->
 <div class="tabs">
-  <button data-tab="about">About</button>
+  <button data-tab="about" class="active">About</button>
   <button data-tab="experience">Experience</button>
   <button data-tab="projects">Projects</button>
   <button data-tab="skills">Skills</button>
 </div>
 
-<!-- CONTENT -->
+<!-- TAB CONTENT -->
 <div class="tab-wrapper">
 
 <!-- ABOUT -->
 <div id="about" class="tab active">
   <section class="about-section">
-    <!-- VIDEO BACKGROUND -->
     <video autoplay muted loop playsinline class="about-video">
       <source src="background.mp4" type="video/mp4">
     </video>
-
-    <!-- OVERLAY -->
     <div class="about-overlay"></div>
-
-    <!-- TEXT CONTENT -->
     <div class="about-content">
       <h2>About Me</h2>
-      <p>
-        Senior Generative AI & ML Engineer with 10+ years of progressive experience evolving from Data Engineering to Machine Learning and now leading enterprise AI initiatives.
-      </p>
-      <p>
-        Expert in designing and deploying large-scale AI systems using GPT-4, Claude, LLaMA, and advanced architectures like RAG, AI agents, and multi-agent orchestration.
-      </p>
-      <p>
-        Strong experience building scalable ML pipelines with TensorFlow, PyTorch, MLflow, Airflow, Docker, and Kubernetes.
-      </p>
-      <p>
-        Deep expertise in big data technologies such as Spark, Kafka, Snowflake, and real-time data systems.
-      </p>
-      <p>
-        Proven track record of delivering production-grade AI systems handling millions of transactions with real-time decision intelligence.
-      </p>
+      <p>Senior Generative AI & ML Engineer with 10+ years of progressive experience evolving from Data Engineering to Machine Learning and now leading enterprise AI initiatives.</p>
+      <p>Expert in designing and deploying large-scale AI systems using GPT-4, Claude, LLaMA, and advanced architectures like RAG, AI agents, and multi-agent orchestration.</p>
+      <p>Strong experience building scalable ML pipelines with TensorFlow, PyTorch, MLflow, Airflow, Docker, and Kubernetes.</p>
+      <p>Deep expertise in big data technologies such as Spark, Kafka, Snowflake, and real-time data systems.</p>
+      <p>Proven track record of delivering production-grade AI systems handling millions of transactions with real-time decision intelligence.</p>
     </div>
   </section>
 </div>
-  
+
 <!-- EXPERIENCE -->
 <div id="experience" class="tab">
-<h2>Professional Experience</h2>
+  <h2>Professional Experience</h2>
 
-<div class="card">
-<h3>PNC Financial Services – Gen AI Engineer</h3>
-<p>May 2024 – Present</p>
-<ul>
-<li>Architected enterprise GenAI platforms using AWS Bedrock, SageMaker, EKS, Lambda, and CloudWatch</li>
-<li>Built LLM-powered AI agents using LangChain & LangGraph</li>
-<li>Designed RAG pipelines with FAISS & Pinecone for semantic retrieval</li>
-<li>Developed FastAPI microservices improving inference performance by 40%</li>
-<li>Implemented CI/CD pipelines with Docker and Kubernetes for production deployments</li>
-<li>Integrated multi-agent AI orchestration to automate finance and risk workflows</li>
-<li>Conducted A/B testing and performance benchmarking for AI systems</li>
-<li>Worked closely with business teams to translate AI insights into actionable decisions</li>
-</ul>
-</div>
+  <div class="card">
+    <h3>PNC Financial Services – Gen AI Engineer</h3>
+    <p>May 2024 – Present</p>
+    <ul>
+      <li>Architected enterprise GenAI platforms using AWS Bedrock, SageMaker, EKS, Lambda, and CloudWatch</li>
+      <li>Built LLM-powered AI agents using LangChain & LangGraph</li>
+      <li>Designed RAG pipelines with FAISS & Pinecone for semantic retrieval</li>
+      <li>Developed FastAPI microservices improving inference performance by 40%</li>
+      <li>Implemented CI/CD pipelines with Docker and Kubernetes for production deployments</li>
+      <li>Integrated multi-agent AI orchestration to automate finance and risk workflows</li>
+      <li>Conducted A/B testing and performance benchmarking for AI systems</li>
+      <li>Worked closely with business teams to translate AI insights into actionable decisions</li>
+    </ul>
+  </div>
 
-<div class="card">
-<h3>Humana – Senior AI/ML Engineer</h3>
-<p>2022 – 2024</p>
-<ul>
-<li>Developed healthcare AI solutions using Azure ML and Synapse Analytics</li>
-<li>Built semantic search and embedding pipelines for patient data using LLMs</li>
-<li>Created dashboards for predictive patient analytics and risk scoring</li>
-<li>Managed end-to-end ML lifecycle using MLflow and Airflow</li>
-<li>Optimized models for real-time inference in production healthcare systems</li>
-<li>Designed ETL pipelines for structured and unstructured clinical data</li>
-<li>Implemented RAG-based knowledge retrieval for internal clinical decision support</li>
-</ul>
-</div>
+  <div class="card">
+    <h3>Humana – Senior AI/ML Engineer</h3>
+    <p>2022 – 2024</p>
+    <ul>
+      <li>Developed healthcare AI solutions using Azure ML and Synapse Analytics</li>
+      <li>Built semantic search and embedding pipelines for patient data using LLMs</li>
+      <li>Created dashboards for predictive patient analytics and risk scoring</li>
+      <li>Managed end-to-end ML lifecycle using MLflow and Airflow</li>
+      <li>Optimized models for real-time inference in production healthcare systems</li>
+      <li>Designed ETL pipelines for structured and unstructured clinical data</li>
+      <li>Implemented RAG-based knowledge retrieval for internal clinical decision support</li>
+    </ul>
+  </div>
 
-<div class="card">
-<h3>Target – AI/ML Engineer</h3>
-<p>2019 – 2022</p>
-<ul>
-<li>Built personalization and recommendation engines using GCP AI services</li>
-<li>Implemented RAG pipelines for product search and customer engagement</li>
-<li>Designed forecasting models to optimize inventory and supply chain</li>
-<li>Worked with BigQuery, Dataflow, and AI Platform for end-to-end ML solutions</li>
-<li>Collaborated with analytics teams to translate insights into actionable strategies</li>
-</ul>
-</div>
+  <div class="card">
+    <h3>Target – AI/ML Engineer</h3>
+    <p>2019 – 2022</p>
+    <ul>
+      <li>Built personalization and recommendation engines using GCP AI services</li>
+      <li>Implemented RAG pipelines for product search and customer engagement</li>
+      <li>Designed forecasting models to optimize inventory and supply chain</li>
+      <li>Worked with BigQuery, Dataflow, and AI Platform for end-to-end ML solutions</li>
+      <li>Collaborated with analytics teams to translate insights into actionable strategies</li>
+    </ul>
+  </div>
 
-<div class="card">
-<h3>Travelers – Data Science Engineer</h3>
-<p>2017 – 2019</p>
-<ul>
-<li>Developed insurance claim prediction systems using Python and Spark</li>
-<li>Implemented fraud detection models using ML algorithms and ensemble methods</li>
-<li>Built dashboards for risk monitoring and predictive analytics</li>
-<li>Optimized data pipelines for performance and scalability</li>
-</ul>
-</div>
+  <div class="card">
+    <h3>Travelers – Data Science Engineer</h3>
+    <p>2017 – 2019</p>
+    <ul>
+      <li>Developed insurance claim prediction systems using Python and Spark</li>
+      <li>Implemented fraud detection models using ML algorithms and ensemble methods</li>
+      <li>Built dashboards for risk monitoring and predictive analytics</li>
+      <li>Optimized data pipelines for performance and scalability</li>
+    </ul>
+  </div>
 
-<div class="card">
-<h3>Krios Info Solutions – Data Engineer</h3>
-<p>2015 – 2017</p>
-<ul>
-<li>Developed ETL pipelines using Spark, Kafka, and Python for large-scale data processing</li>
-<li>Built healthcare analytics systems integrating multiple data sources</li>
-<li>Automated data quality and validation workflows</li>
-<li>Worked on cloud deployment of data pipelines across AWS and GCP</li>
-</ul>
-</div>
-
+  <div class="card">
+    <h3>Krios Info Solutions – Data Engineer</h3>
+    <p>2015 – 2017</p>
+    <ul>
+      <li>Developed ETL pipelines using Spark, Kafka, and Python for large-scale data processing</li>
+      <li>Built healthcare analytics systems integrating multiple data sources</li>
+      <li>Automated data quality and validation workflows</li>
+      <li>Worked on cloud deployment of data pipelines across AWS and GCP</li>
+    </ul>
+  </div>
 </div>
 
 <!-- PROJECTS -->
 <div id="projects" class="tab">
-<h2>Projects</h2>
+  <h2>Projects</h2>
 
-<div class="card">
-<h3>GenAI Fraud Detection Platform</h3>
-<div class="details">
-<p>Enterprise fraud detection system using LLMs and RAG pipelines.</p>
-<ul>
-<li>Technologies: LangChain, FAISS, Pinecone, FastAPI</li>
-<li>Real-time inference with 40% performance improvement</li>
-<li>Automated anomaly detection and fraud alerts</li>
-</ul>
-</div>
-</div>
+  <div class="card">
+    <h3>GenAI Fraud Detection Platform</h3>
+    <div class="details">
+      <p>Enterprise fraud detection system using LLMs and RAG pipelines.</p>
+      <ul>
+        <li>Technologies: LangChain, FAISS, Pinecone, FastAPI</li>
+        <li>Real-time inference with 40% performance improvement</li>
+        <li>Automated anomaly detection and fraud alerts</li>
+      </ul>
+    </div>
+  </div>
 
-<div class="card">
-<h3>Enterprise RAG System</h3>
-<div class="details">
-<p>Document intelligence system with semantic search and hybrid retrieval.</p>
-<ul>
-<li>Technologies: LLaMA, LangGraph, Pinecone embeddings</li>
-<li>Semantic search across multiple document types</li>
-<li>Improved knowledge retrieval accuracy for business processes</li>
-</ul>
-</div>
-</div>
+  <div class="card">
+    <h3>Enterprise RAG System</h3>
+    <div class="details">
+      <p>Document intelligence system with semantic search and hybrid retrieval.</p>
+      <ul>
+        <li>Technologies: LLaMA, LangGraph, Pinecone embeddings</li>
+        <li>Semantic search across multiple document types</li>
+        <li>Improved knowledge retrieval accuracy for business processes</li>
+      </ul>
+    </div>
+  </div>
 
-<div class="card">
-<h3>Patient Analytics Dashboard</h3>
-<div class="details">
-<p>Healthcare analytics platform for predictive patient outcomes.</p>
-<ul>
-<li>Technologies: Azure ML, MLflow, Power BI</li>
-<li>Built dashboards for patient risk scoring and monitoring</li>
-<li>Embedded AI-based predictive models for real-time insights</li>
-</ul>
-</div>
-</div>
+  <div class="card">
+    <h3>Patient Analytics Dashboard</h3>
+    <div class="details">
+      <p>Healthcare analytics platform for predictive patient outcomes.</p>
+      <ul>
+        <li>Technologies: Azure ML, MLflow, Power BI</li>
+        <li>Built dashboards for patient risk scoring and monitoring</li>
+        <li>Embedded AI-based predictive models for real-time insights</li>
+      </ul>
+    </div>
+  </div>
 
-<div class="card">
-<h3>Personalization & Forecasting Engine</h3>
-<div class="details">
-<p>Retail recommendation and inventory forecasting system.</p>
-<ul>
-<li>Technologies: GCP, BigQuery, Dataflow, TensorFlow</li>
-<li>Improved product recommendations and supply chain forecasts</li>
-<li>Integrated RAG pipelines for better search and personalization</li>
-</ul>
-</div>
-</div>
-
+  <div class="card">
+    <h3>Personalization & Forecasting Engine</h3>
+    <div class="details">
+      <p>Retail recommendation and inventory forecasting system.</p>
+      <ul>
+        <li>Technologies: GCP, BigQuery, Dataflow, TensorFlow</li>
+        <li>Improved product recommendations and supply chain forecasts</li>
+        <li>Integrated RAG pipelines for better search and personalization</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 <!-- SKILLS -->
 <div id="skills" class="tab">
-<h2>Technical Skills</h2>
-
-<p><b>Generative AI:</b> GPT-4, Claude, LLaMA, RAG, LangChain, LangGraph, AI Agents, Multi-Agent Orchestration</p>
-<p><b>Machine Learning:</b> TensorFlow, PyTorch, XGBoost, Scikit-learn, MLflow, Airflow</p>
-<p><b>Data Engineering:</b> Spark, Kafka, Snowflake, ETL Pipelines, BigQuery, Dataflow</p>
-<p><b>Cloud:</b> AWS (SageMaker, Bedrock, Lambda, EKS), Azure ML, Synapse Analytics, GCP (AI Platform, BigQuery)</p>
-<p><b>DevOps:</b> Docker, Kubernetes, Terraform, CI/CD Pipelines</p>
-<p><b>Databases:</b> PostgreSQL, MongoDB, Redis</p>
-<p><b>Visualization:</b> Power BI, Tableau, Matplotlib, Seaborn</p>
-
+  <h2>Technical Skills</h2>
+  <p><b>Generative AI:</b> GPT-4, Claude, LLaMA, RAG, LangChain, LangGraph, AI Agents, Multi-Agent Orchestration</p>
+  <p><b>Machine Learning:</b> TensorFlow, PyTorch, XGBoost, Scikit-learn, MLflow, Airflow</p>
+  <p><b>Data Engineering:</b> Spark, Kafka, Snowflake, ETL Pipelines, BigQuery, Dataflow</p>
+  <p><b>Cloud:</b> AWS (SageMaker, Bedrock, Lambda, EKS), Azure ML, Synapse Analytics, GCP (AI Platform, BigQuery)</p>
+  <p><b>DevOps:</b> Docker, Kubernetes, Terraform, CI/CD Pipelines</p>
+  <p><b>Databases:</b> PostgreSQL, MongoDB, Redis</p>
+  <p><b>Visualization:</b> Power BI, Tableau, Matplotlib, Seaborn</p>
 </div>
 
 </div>
 
-<!-- SCRIPT -->
+<!-- SCRIPTS -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-
   const buttons = document.querySelectorAll(".tabs button");
   const tabs = document.querySelectorAll(".tab");
   const hero = document.querySelector(".hero");
 
- buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    const target = button.getAttribute("data-tab");
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const target = button.getAttribute("data-tab");
+      tabs.forEach(tab => tab.classList.remove("active"));
+      document.getElementById(target).classList.add("active");
 
-    tabs.forEach(tab => tab.classList.remove("active"));
-    document.getElementById(target).classList.add("active");
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
 
-    buttons.forEach(btn => btn.classList.remove("active"));
-    button.classList.add("active");
-
-    // Show image only in About
-    if (target === "about") {
-      hero.classList.remove("hide-hero");
-    } else {
-      hero.classList.add("hide-hero");
-    }
-  });
-});
-
-  // Expand projects
-  const cards = document.querySelectorAll(".card");
-  cards.forEach(card => {
-    card.addEventListener("click", () => {
-      card.classList.toggle("open");
+      if(target === "about") hero.classList.remove("hide-hero");
+      else hero.classList.add("hide-hero");
     });
   });
 
+  const cards = document.querySelectorAll(".card");
+  cards.forEach(card => card.addEventListener("click", () => card.classList.toggle("open")));
 });
-</script>
-<script>
+
 const text = "Senior Generative AI & ML Engineer";
 let index = 0;
 const typedElement = document.getElementById("typed-title");
@@ -295,12 +233,11 @@ function typeTitle() {
   if(index < text.length){
     typedElement.innerHTML += text.charAt(index);
     index++;
-    setTimeout(typeTitle, 100); // typing speed
+    setTimeout(typeTitle, 100);
   }
 }
-
 document.addEventListener("DOMContentLoaded", typeTitle);
 </script>
+
 </body>
 </html>
-
