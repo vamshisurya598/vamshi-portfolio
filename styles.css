@@ -2,7 +2,7 @@
 .fade-in-name {
   opacity: 0;                 /* start invisible */
   animation: fadeIn 2s ease forwards; /* 2 seconds fade in */
-  animation-delay: 0.5s;      /* optional delay after page loads */
+  animation-delay: 1s;      /* optional delay after page loads */
 }
 
 @keyframes fadeIn {
