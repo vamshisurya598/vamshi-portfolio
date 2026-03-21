@@ -162,20 +162,22 @@ body {
 /* ==========================
    SKILL BARS
 ========================== */
+<style>
 .skill-bar {
   width: 100%;
-  background: #ddd;
-  border-radius: 8px;
-  margin: 5px 0 15px 0;
+  background-color: #ddd;
+  border-radius: 20px;
+  margin: 5px 0 20px 0;
+  height: 20px;
 }
 
 .skill-fill {
-  height: 15px;
-  background: #2575fc;
-  border-radius: 8px;
-  width: 0;
-  transition: width 1s ease-in-out;
+  height: 100%;
+  background: linear-gradient(90deg, #ff9933, #ffffff, #138808); /* India flag fade */
+  border-radius: 20px;
+  transition: width 1.2s ease-in-out; /* optional smooth fill animation */
 }
+</style>
 /* ==========================
    SMOOTH SCROLL
 ========================== */
