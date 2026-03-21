@@ -21,15 +21,23 @@
 
   <div class="right">
     <h1>Vamshi Surya</h1>
-    <h2>Senior Generative AI & ML Engineer</h2>
+   <h2><span id="typed-title"></span></h2>
 
-    <p><b>Email:</b> vamshisurya598@gmail.com</p>
-    <p><b>Phone:</b> +1 (917) 266-1311</p>
-    <p><b>LinkedIn:</b> 
-      <a href="https://www.linkedin.com/in/vamshi-surya598/" target="_blank">
-        View Profile
-      </a>
-    </p>
+    <p><b>Email:</b> 
+  <a href="mailto:vamshisurya598@gmail.com" target="_blank">
+    vamshisurya598@gmail.com
+  </a>
+</p>
+<p><b>Phone:</b> 
+  <a href="tel:+19172661311">
+    +1 (917) 266-1311
+  </a>
+</p>
+<p><b>LinkedIn:</b> 
+  <a href="https://www.linkedin.com/in/vamshi-surya598/" target="_blank">
+    View Profile
+  </a>
+</p>
 
     <p class="summary">
       Senior Generative AI & ML Engineer with 10+ years of experience delivering enterprise-scale AI systems across finance, healthcare, retail, and insurance. 
@@ -242,6 +250,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+<script>
+const text = "Senior Generative AI & ML Engineer";
+let index = 0;
+const typedElement = document.getElementById("typed-title");
 
+function typeTitle() {
+  if(index < text.length){
+    typedElement.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeTitle, 100); // typing speed
+  }
+}
+
+document.addEventListener("DOMContentLoaded", typeTitle);
+</script>
 </body>
 </html>
