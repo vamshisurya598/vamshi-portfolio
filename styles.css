@@ -1,3 +1,14 @@
+/* FADE-IN EFFECT FOR NAME */
+.fade-in-name {
+  opacity: 0;                 /* start invisible */
+  animation: fadeIn 2s ease forwards; /* 2 seconds fade in */
+  animation-delay: 0.5s;      /* optional delay after page loads */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 body {
   margin: 0;
   font-family: Arial;
