@@ -17,7 +17,8 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* HERO SECTION */
+
+/* HERO SECTION WITH ANIMATED GRADIENT */
 .hero {
   display: flex;
   padding: 40px;
@@ -26,20 +27,26 @@ body {
   gap: 40px;
   align-items: center;
   animation: gradientBG 15s ease infinite;
-  color: white;
+  color: white; /* text shows on colorful background */
 }
 
+/* Gradient animation keyframes */
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-.left { flex: 1; }
-.right { flex: 2; }
+/* Hero right-side text */
+.hero .right h1,
+.hero .right h2,
+.hero .right p {
+  color: white; /* ensures all text is visible */
+}
 
+/* Profile image adjustments */
 .profile-img {
-  width: 300px;
+  width: 250px; /* smaller so gradient shows behind text */
   border-radius: 10px;
 }
 
