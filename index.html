@@ -282,22 +282,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const tabs = document.querySelectorAll(".tab");
   const hero = document.querySelector(".hero");
 
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      const target = button.getAttribute("data-tab");
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const target = button.getAttribute("data-tab");
 
-      tabs.forEach(tab => tab.classList.remove("active"));
-      document.getElementById(target).classList.add("active");
+    tabs.forEach(tab => tab.classList.remove("active"));
+    document.getElementById(target).classList.add("active");
 
-      // Show image only in About
-      if (target === "about") {
-        hero.classList.remove("hide-hero");
-      } else {
-        hero.classList.add("hide-hero");
-      }
-    });
+    buttons.forEach(btn => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    if (target === "about") {
+      hero.classList.remove("hide-hero");
+    } else {
+      hero.classList.add("hide-hero");
+    }
   });
-
+});
   // Expand cards
   const cards = document.querySelectorAll(".card");
   cards.forEach(card => {
