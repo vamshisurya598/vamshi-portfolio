@@ -177,12 +177,12 @@ body {
 }
 /* ABOUT SECTION VIDEO FIX */
 .about-section {
-  position: relative;      /* ensures stacking context */
+  position: relative;
   overflow: hidden;
   border-radius: 12px;
   margin-top: 40px;
+  min-height: 400px; /* ensures tab has height */
 }
-
 .about-video {
   position: absolute;
   top: 0;
