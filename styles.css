@@ -114,3 +114,17 @@ body {
 .about-overlay { position:absolute; inset:0; background: rgba(0,0,0,0.5); z-index:1; }
 .about-content { position:relative; z-index:2; padding:30px; color:white; }
 
+.linkedin-btn {
+  background-color: #0077b5;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.linkedin-btn:hover {
+  background-color: #005582;
+}
